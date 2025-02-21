@@ -13,5 +13,10 @@ Design attached:
 [GitHub Profile](https://github.com/symtalha14)
 
 
+```mermaid
+sequenceDiagram
+'End User' ->> 'MG Landing Service': What is MG Gadgets about?
+'MG Landing Service' ->> 'End User': Landing Page
+
 
 
