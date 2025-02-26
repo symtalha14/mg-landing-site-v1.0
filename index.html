@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- MG Gadgets v1.0 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="">
+
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>MG Gadgets</title>
+</head>
+
+<body>
+
+    <!-- Header begins -->
+
+    <header id="header" class="bg-gradient-to-b from-black to-black p-3 pt-2.5 pb-2.5">
+        <div class=" p-0 w-full grid grid-cols-8 align-middle ">
+
+
+            <div id="header__logo"
+                class="h-full mr-2.5 col-span-2 md:w-8/12 max-md:w-52 flex flex-col justify-center align-middle max-md:mr-1 w-full place-self-end">
+                <img alt="MG Gadgets Logo" class="w-full" src="./public/static/images/header-logo.png" />
+            </div>
+
+
+
+            <div id="header__search" class="place-items-center col-span-4 w-full h-fit p-2 rounded-lg">
+                <form id="header__searchForm" class="w-full h-fit flex">
+                    <img style="width:30px;height:30px;" class=" m-auto" src="./public/static/images/search-icon.png" />
+                    <input type="text" class="w-full pl-2 pt-1 pb-1" placeholder="Search mobiles, brands and more" />
+                </form>
+            </div>
+            <!-- Empty Cell -->
+            <!-- <div></div> -->
+
+            <div id="header__icons"
+                class="w-full flex align-middle justify-start ml-2 col-span-2 container max-md:hidden">
+                <button class="mr-2 btn primary btn-sm text-white">Login</button>
+                <button class="mr-2 btn primary btn-sm text-white">Sign up</button>
+                <!-- <img class="w-10" src="./public/static/images/user-icon.png" /> -->
+
+            </div>
+
+
+        </div>
+
+    </header>
+    <!-- Header ends -->
+    <div class="content">
+        <nav id="navbar" class="bg-black w-full p-1.5">
+            <ul
+                class="text-base font-medium w-full p-3 pb-0 flex flex-row justify-center align-middle text-white space-x-14">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li class="dropdown-container parent">
+                    <a href="#">Buy Phone&nbsp;<i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown parent">
+                        <li>
+                            <a href="/">Item 1</a>
+                        </li>
+                        <li>
+                            <a href="/">Item 1</a>
+                        </li>
+                        <li class="dropdown-container child">
+                            <a href="/">Item 1</a>
+                            <ul class="dropdown child">
+                                <li>
+                                    <a href="">Item Child</a>
+                                </li>
+                                <li class="dropdown-container child">
+                                    <a href="">Item Child 2</a>
+                                    <ul class="dropdown child">
+                                        <li>
+                                            <a href="">Item Child Child</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/">Item 1</a>
+                        </li>
+                        <li>
+                            <a href="/">Item 1</a>
+                        </li>
+                        <li>
+                            <a href="/">Item 1</a>
+                        </li>
+                        <li class="dropdown-container child">
+                            <a href="/">Item 1</a>
+                            <ul class="dropdown child">
+                                <li>
+                                    <a href="">Item Child</a>
+                                </li>
+                                <li class="dropdown-container child">
+                                    <a href="">Item Child 2</a>
+                                    <ul class="dropdown child">
+                                        <li>
+                                            <a href="">Item Child Child</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown-container parent">
+                    <a href="#">Sell Phone&nbsp;<i class="fa fa-angle-down"></i></a>
+                </li>
+                <li class="dropdown-container parent">
+                    <a href="#">Repair Phone&nbsp;<i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown parent">
+                        <li>
+                            <a href="">Test Item</a>
+                        </li>
+                        <li class="dropdown-container child">
+                            <a href="">Test Item</a>
+                            <ul class="dropdown child">
+                                <li>
+                                    <a href="">
+                                        Child Test Item
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Partner Program</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main>
+            <div class="feature__icons justify-evenly pb-2 container flex flex-row w-full border-b-2 border-b-gray-300">
+                <div class="feature__icon">
+                    <div class="feature__icon_image">
+                        <img src="./public/static/images/brand_icons/apple.jpeg"/>
+                    </div>
+                    <span>
+                        Apple
+                    </span>
+                </div>
+                <div class="feature__icon">
+                    <div class="feature__icon_image">
+                        <img src="./public/static/images/brand_icons/google.jpeg"/>
+                    </div>
+                    <span>
+                        Google
+                    </span>
+                </div>
+                <div class="feature__icon">
+                    <div class="feature__icon_image">
+                        <img src="./public/static/images/brand_icons/motorola.jpeg"/>
+                    </div>
+                    <span>
+                        Motorola
+                    </span>
+                </div>
+                <div class="feature__icon">
+                    <div class="feature__icon_image">
+                        <img src="./public/static/images/brand_icons/one_plus.jpeg"/>
+                    </div>
+                    <span>
+                        One Plus
+                    </span>
+                </div>
+                <div class="feature__icon">
+                    <div class="feature__icon_image">
+                        <img src="./public/static/images/brand_icons/oppo.jpeg"/>
+                    </div>
+                    <span>
+                        Oppo
+                    </span>
+                </div>
+                <div class="feature__icon">
+                    <div class="feature__icon_image">
+                        <img src="./public/static/images/brand_icons/realme.jpeg"/>
+                    </div>
+                    <span>
+                        Realme
+                    </span>
+                </div>
+                <div class="feature__icon">
+                    <div class="feature__icon_image">
+                        <img src="./public/static/images/brand_icons/samsung.jpeg"/>
+                    </div>
+                    <span>
+                        Samsung
+                    </span>
+                </div>
+                <div class="feature__icon">
+                    <div class="feature__icon_image">
+                        <img src="./public/static/images/brand_icons/vivo.jpeg"/>
+                    </div>
+                    <span>
+                        Vivo
+                    </span>
+                </div>
+                <div class="feature__icon">
+                    <div class="feature__icon_image">
+                        <img src="./public/static/images/brand_icons/xiaomi.jpeg"/>
+                    </div>
+                    <span>
+                        Xiaomi
+                    </span>
+                </div>
+            </div>
+
+            <!-- Slideshow starts here -->
+            <div class="slider">
+                <div id="slider_controls">
+                    <div id="next">
+                        <span>
+                            &rsaquo;
+                        </span>
+                    </div>
+                    <div id="previous">&lsaquo;</div>
+                </div>
+                <div data-slide="2" class="slide">
+                    <img src="./public/static/images/slides/slide2.jpg" alt="" srcset="">
+                </div>
+                <div data-slide="1" class="slide">
+                    <img src="./public/static/images/slides/slide1.jpg" alt="" srcset="">
+                </div>
+            </div>
+
+            <!-- slideshow ends here -->
+            <div class="w-full m-0">
+                <img class="w-full" src="./public/static/images/banner_1.png" />
+            </div>
+
+            <div class="w-full m-0 mt-20 pb-44">
+                <img style="width: 95%;margin-left: 2.5%;" class=" w-fit" src="./public/static/images/brands__section.png"/>
+            </div>
+
+            <div class="w-full m-0  pb-20">
+                <img style="width: 95%;margin-left: 2.5%;" class=" w-fit" src="./public/static/images/mobile_section.png"/>
+            </div>
+            <div class="w-full m-0  pb-20">
+                <img style="width: 95%;margin-left: 2.5%;" class=" w-fit" src="./public/static/images/mobile_section.png"/>
+            </div>
+
+
+        </main>
+
+        <!-- Main Content ends -->
+
+    </div>
+
+    <!-- Inline Scripts -->
+    <script>
+
+        
+    </script>
+    <script src="./public/static/js/vanilla.js"></script>
+</body>
+
+
+</html>

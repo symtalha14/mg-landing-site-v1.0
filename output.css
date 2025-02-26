@@ -564,12 +564,6 @@
   .m-0 {
     margin: calc(var(--spacing) * 0);
   }
-  .m-3 {
-    margin: calc(var(--spacing) * 3);
-  }
-  .m-53 {
-    margin: calc(var(--spacing) * 53);
-  }
   .m-auto {
     margin: auto;
   }
@@ -626,9 +620,6 @@
   }
   .h-full {
     height: 100%;
-  }
-  .w-7 {
-    width: calc(var(--spacing) * 7);
   }
   .w-10 {
     width: calc(var(--spacing) * 10);
@@ -725,9 +716,6 @@
   }
   .p-3 {
     padding: calc(var(--spacing) * 3);
-  }
-  .p-6 {
-    padding: calc(var(--spacing) * 6);
   }
   .pt-1 {
     padding-top: calc(var(--spacing) * 1);
