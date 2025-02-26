@@ -4,8 +4,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../src/output.css" />
+    <meta name="viewport" content="">
+
+    <link rel="stylesheet" href="./output.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>MG Gadgets</title>
@@ -28,7 +29,7 @@
 
             <div id="header__search" class="place-items-center col-span-4 w-full h-fit p-2 rounded-lg">
                 <form id="header__searchForm" class="w-full h-fit flex">
-                    <img class="w-fit h-5 m-auto" src="./public/static/images/search-icon.png" />
+                    <img style="width:30px;height:30px;" class=" m-auto" src="./public/static/images/search-icon.png" />
                     <input type="text" class="w-full pl-2 pt-1 pb-1" placeholder="Search mobiles, brands and more" />
                 </form>
             </div>
@@ -144,57 +145,75 @@
         <main>
             <div class="feature__icons justify-evenly pb-2 container flex flex-row w-full border-b-2 border-b-gray-300">
                 <div class="feature__icon">
-                    <div class="feature__icon_image"></div>
+                    <div class="feature__icon_image">
+                        <img src="./public/static/images/brand_icons/apple.jpeg"/>
+                    </div>
                     <span>
-                        Brand name
+                        Apple
                     </span>
                 </div>
                 <div class="feature__icon">
-                    <div class="feature__icon_image"></div>
+                    <div class="feature__icon_image">
+                        <img src="./public/static/images/brand_icons/google.jpeg"/>
+                    </div>
                     <span>
-                        Brand name
+                        Google
                     </span>
                 </div>
                 <div class="feature__icon">
-                    <div class="feature__icon_image"></div>
+                    <div class="feature__icon_image">
+                        <img src="./public/static/images/brand_icons/motorola.jpeg"/>
+                    </div>
                     <span>
-                        Brand name
+                        Motorola
                     </span>
                 </div>
                 <div class="feature__icon">
-                    <div class="feature__icon_image"></div>
+                    <div class="feature__icon_image">
+                        <img src="./public/static/images/brand_icons/one_plus.jpeg"/>
+                    </div>
                     <span>
-                        Brand name
+                        One Plus
                     </span>
                 </div>
                 <div class="feature__icon">
-                    <div class="feature__icon_image"></div>
+                    <div class="feature__icon_image">
+                        <img src="./public/static/images/brand_icons/oppo.jpeg"/>
+                    </div>
                     <span>
-                        Brand name
+                        Oppo
                     </span>
                 </div>
                 <div class="feature__icon">
-                    <div class="feature__icon_image"></div>
+                    <div class="feature__icon_image">
+                        <img src="./public/static/images/brand_icons/realme.jpeg"/>
+                    </div>
                     <span>
-                        Brand name
+                        Realme
                     </span>
                 </div>
                 <div class="feature__icon">
-                    <div class="feature__icon_image"></div>
+                    <div class="feature__icon_image">
+                        <img src="./public/static/images/brand_icons/samsung.jpeg"/>
+                    </div>
                     <span>
-                        Brand name
+                        Samsung
                     </span>
                 </div>
                 <div class="feature__icon">
-                    <div class="feature__icon_image"></div>
+                    <div class="feature__icon_image">
+                        <img src="./public/static/images/brand_icons/vivo.jpeg"/>
+                    </div>
                     <span>
-                        Brand name
+                        Vivo
                     </span>
                 </div>
                 <div class="feature__icon">
-                    <div class="feature__icon_image"></div>
+                    <div class="feature__icon_image">
+                        <img src="./public/static/images/brand_icons/xiaomi.jpeg"/>
+                    </div>
                     <span>
-                        Brand name
+                        Xiaomi
                     </span>
                 </div>
             </div>
@@ -209,15 +228,29 @@
                     </div>
                     <div id="previous">&lsaquo;</div>
                 </div>
-                <div data-slide="1" class="slide">
-                    <img src="./public/static/images/slides/slide1.jpg" alt="" srcset="">
-                </div>
                 <div data-slide="2" class="slide">
                     <img src="./public/static/images/slides/slide2.jpg" alt="" srcset="">
+                </div>
+                <div data-slide="1" class="slide">
+                    <img src="./public/static/images/slides/slide1.jpg" alt="" srcset="">
                 </div>
             </div>
 
             <!-- slideshow ends here -->
+            <div class="w-full m-0">
+                <img class="w-full" src="./public/static/images/banner_1.png" />
+            </div>
+
+            <div class="w-full m-0 mt-20 pb-44">
+                <img style="width: 95%;margin-left: 2.5%;" class=" w-fit" src="./public/static/images/brands__section.png"/>
+            </div>
+
+            <div class="w-full m-0  pb-20">
+                <img style="width: 95%;margin-left: 2.5%;" class=" w-fit" src="./public/static/images/mobile_section.png"/>
+            </div>
+            <div class="w-full m-0  pb-20">
+                <img style="width: 95%;margin-left: 2.5%;" class=" w-fit" src="./public/static/images/mobile_section.png"/>
+            </div>
 
 
         </main>
@@ -229,38 +262,9 @@
     <!-- Inline Scripts -->
     <script>
 
-        window.onload = () => {
-            var slider = document.querySelector(".slider");
-            var nextSlide = document.querySelector("#next");
-            var previousSlide = document.querySelector("#previous");
-            var currentSlide = 1;
-
-            setInterval(() => {
-
-                if (currentSlide == 2) {
-                    currentSlide = 1;
-                }
-                var slide = document.querySelector("[data-slide=" + currentSlide + "]");
-                slide.style.left = "-100%";
-                currentSlide++;
-
-
-            }, 3000);
-
-            window.onscroll = function () { myFunction() };
-            var header = document.getElementById("header");
-            var sticky = header.offsetTop;
-
-            function myFunction() {
-                if (window.pageYOffset > sticky) {
-                    header.classList.add("sticky");
-                } else {
-                    header.classList.remove("sticky");
-                }
-            }
-        }
+        
     </script>
-
+    <script src="./public/static/js/vanilla.js"></script>
 </body>
 
 
