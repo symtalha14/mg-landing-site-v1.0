@@ -106,6 +106,50 @@ window.onload = () => {
         } else {
             header.classList.remove("sticky");
         }
+
     }
+
+
+    var scrollNextButtons = document.querySelectorAll(".fa-angle-right");
+    var scrollPrevButtons = document.querySelectorAll(".fa-angle-left");
+
+    scrollPrevButtons.forEach(spreButton => {
+
+        spreButton.addEventListener("click", (e) => {
+            var containerId = spreButton.getAttribute("data-controller");
+            var itemContainer = document.querySelector("[data-item-container='" + containerId + "']");
+            itemContainer.scrollBy(-100, 0);
+            if (itemContainer.scrollLeft < 100) {
+                itemContainer.scrollTo(0, 0);
+            }
+        });
+
+    })
+
+    scrollNextButtons.forEach(snxButton => {
+        snxButton.addEventListener("click", (e) => {
+            var containerId = snxButton.getAttribute("data-controller");
+            var itemContainer = snxButton.nextElementSibling;
+
+            console.log(itemContainer);
+            itemContainer.scrollBy(100, 0);
+
+        })
+    });
+
+
+    var itemContainers = document.querySelectorAll("[data-item-container]");
+    Array.prototype.slice.call(itemContainers).forEach(container => {
+        container.addEventListener("scroll", (e) => {
+            var containerId = container.getAttribute("data-item-container");
+            var prevBtn = document.querySelector("[data-controller='" + containerId + "']");
+            if (container.scrollLeft > 0) {
+                prevBtn.style.display = "block";
+            } else {
+                prevBtn.style.display = "none";
+            }
+            
+        })
+    })
 
 }

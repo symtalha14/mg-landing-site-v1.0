@@ -795,6 +795,12 @@
   .pl-2 {
     padding-left: calc(var(--spacing) * 2);
   }
+  .pl-3 {
+    padding-left: calc(var(--spacing) * 3);
+  }
+  .pl-3\.5 {
+    padding-left: calc(var(--spacing) * 3.5);
+  }
   .text-center {
     text-align: center;
   }
@@ -1241,8 +1247,12 @@ nav {
   width: 100%;
   padding: 10px;
   overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: proximity;
+  transition: all .5s ease-in-out;
 }
 .custom_container {
+  position: relative;
   padding-top: var(--section-spacing);
   padding-bottom: var(--section-spacing);
 }
@@ -1250,15 +1260,26 @@ nav {
   padding-top: calc(0.7*var(--section-spacing));
   padding-bottom: calc(0.7*var(--section-spacing));
 }
-.custom_container h1 {
+.custom_container h1, .custom_container h3, .custom_container h4 {
   font-family: var(--regular-font-family);
   font-weight: bold;
   font-size: 1.8rem;
   line-height: 7.2rem;
 }
+.custom_container h4 {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+.custom_container h3 {
+  line-height: 2rem;
+}
 .custom_container h1.text-l {
   font-size: 2.3rem;
   line-height: 9.2rem;
+}
+h3.text-b {
+  font-size: 1.25rem;
+  line-height: 1.25rem;
 }
 .custom_container h1.text-emphasis {
   font-size: 2.45rem;
@@ -1288,6 +1309,34 @@ nav {
 .social_icons div span:hover {
   color: black;
   background-color: white;
+}
+.custom_container .fa-angle-left, .custom_container .fa-angle-right {
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  display: grid;
+  font-size: 28px;
+  padding: 20px;
+  padding-top: 18px;
+  place-items: center;
+  border-radius: 100%;
+  box-shadow: 0 0 10px rgba(60, 54, 54, 0.433);
+  position: absolute;
+  top: 50%;
+  color: #0000005c;
+  z-index: 1000;
+  transition: all .3s ease-in-out;
+}
+.custom_container .fa-angle-left:hover, .custom_container .fa-angle-right:hover {
+  cursor: pointer;
+  transform: scale(0.97);
+}
+.custom_container .fa-angle-left {
+  left: -2.5%;
+  display: none;
+}
+.custom_container .fa-angle-right {
+  right: -2.5%;
 }
 @keyframes spin {
   to {
