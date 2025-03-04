@@ -118,7 +118,7 @@ window.onload = () => {
         spreButton.addEventListener("click", (e) => {
             var containerId = spreButton.getAttribute("data-controller");
             var itemContainer = document.querySelector("[data-item-container='" + containerId + "']");
-            itemContainer.scrollBy(-100, 0);
+            itemContainer.scrollBy(-290, 0);
             if (itemContainer.scrollLeft < 100) {
                 itemContainer.scrollTo(0, 0);
             }
@@ -132,7 +132,7 @@ window.onload = () => {
             var itemContainer = snxButton.nextElementSibling;
 
             console.log(itemContainer);
-            itemContainer.scrollBy(100, 0);
+            itemContainer.scrollBy(290, 0);
 
         })
     });
