@@ -97,7 +97,7 @@ window.onload = () => {
 
 
     window.onscroll = function () { myFunction() };
-    var header = document.getElementById("header");
+    var header = document.getElementById("sticky-header");
     var sticky = header.offsetTop;
 
     function myFunction() {
@@ -155,5 +155,14 @@ window.onload = () => {
     var year = document.querySelector("#year");
     var y = new Date().getFullYear();
     year.innerText = y;
+
+
+    document.querySelector("#burgerMenu").addEventListener("click", (e)=>{
+        document.querySelector(".mobileNav").style.display="block";
+    });
+
+    document.querySelector("#closeMenu").addEventListener("click", (e)=>{
+        document.querySelector(".mobileNav").style.display="none";
+    });
 
 }

@@ -522,6 +522,9 @@
   }
 }
 @layer utilities {
+  .absolute {
+    position: absolute;
+  }
   .static {
     position: static;
   }
@@ -561,6 +564,9 @@
   .m-auto {
     margin: auto;
   }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
   }
@@ -575,9 +581,6 @@
   }
   .ml-2 {
     margin-left: calc(var(--spacing) * 2);
-  }
-  .ml-4 {
-    margin-left: calc(var(--spacing) * 4);
   }
   .ml-auto {
     margin-left: auto;
@@ -658,6 +661,10 @@
   .rounded-lg {
     border-radius: var(--radius-lg);
   }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .border-b-2 {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 2px;
@@ -682,6 +689,9 @@
   }
   .p-0 {
     padding: calc(var(--spacing) * 0);
+  }
+  .p-1 {
+    padding: calc(var(--spacing) * 1);
   }
   .p-1\.5 {
     padding: calc(var(--spacing) * 1.5);
@@ -791,6 +801,11 @@
       grid-column: span 5 / span 5;
     }
   }
+  .max-sm\:flex {
+    @media (width < 40rem) {
+      display: flex;
+    }
+  }
   .max-sm\:hidden {
     @media (width < 40rem) {
       display: none;
@@ -804,6 +819,16 @@
   .max-sm\:grid-cols-2 {
     @media (width < 40rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .max-sm\:flex-row {
+    @media (width < 40rem) {
+      flex-direction: row;
+    }
+  }
+  .max-sm\:justify-between {
+    @media (width < 40rem) {
+      justify-content: space-between;
     }
   }
   .max-sm\:pt-3 {
@@ -824,6 +849,11 @@
   .sm\:col-span-2 {
     @media (width >= 40rem) {
       grid-column: span 2 / span 2;
+    }
+  }
+  .sm\:hidden {
+    @media (width >= 40rem) {
+      display: none;
     }
   }
   .md\:col-span-2 {
@@ -864,6 +894,11 @@
   .md\:grid-rows-2 {
     @media (width >= 48rem) {
       grid-template-rows: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .md\:text-white {
+    @media (width >= 48rem) {
+      color: var(--color-white);
     }
   }
 }
@@ -1376,7 +1411,8 @@ h3.text-b {
 }
 @media only screen and (max-width:786px) {
   #header__search {
-    width: 102%;
+    width: 100%;
+    box-sizing: border-box;
   }
   .slider {
     height: 300px;
@@ -1412,6 +1448,101 @@ h3.text-b {
   .mobile_card .discount_strip {
     font-size: 0.75rem;
   }
+}
+@keyframes revealNav {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.mobileNav {
+  position: fixed;
+  background-color: white;
+  color: black !important;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  animation-name: revealNav;
+  animation-timing-function: linear;
+  animation-duration: 500ms;
+  animation-delay: 0;
+  z-index: 1000000;
+  overflow-y: scroll;
+  padding-top: 40px;
+  display: none;
+}
+.mobileNav ul.parentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.mobileNav .dropdown-container {
+  position: relative;
+}
+.mobileNav .dropdown {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  top: 0;
+}
+.mobileNav .dropdown.child {
+  position: relative;
+  left: 0;
+  top: inherit;
+}
+i.fa-plus {
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+i.fa-minus {
+  display: none;
+  margin-right: 10px;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+.mobileNav .dropdown-container.parent:hover i.fa-minus {
+  display: block;
+}
+.mobileNav .dropdown-container.parent:hover i.fa-plus {
+  display: none;
+}
+.mobileNav .dropdown-container.parent:hover .dropdown.parent, .mobileNav .dropdown.parent:hover {
+  display: block;
+}
+.mobileNav .dropdown-container.child:hover ~ .parent_above {
+  display: block;
+}
+.mobileNav .dropdown-container.parent:hover i.fa-minus:hover + div.dropdown.parent {
+  display: none !important;
+}
+.parent_above ul:hover, .parent_above:hover, .parent_above ul li:hover, .dropdown.child:hover > .parent_above, .dropdown-container:hover > .parent_above {
+  display: block;
+}
+.mobileNav .parent_above {
+  display: none;
+}
+.mobileNav .dropdown-container {
+  width: 100%;
+}
+.mobileNav .fa-plus {
+  margin-right: 10px;
+}
+.mobileNav .dropdown-container a {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.mobileNav ul {
+  overflow-y: scroll !important;
+}
+.mobileNav ul li {
+  padding-bottom: 0.8rem;
 }
 @keyframes spin {
   to {

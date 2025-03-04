@@ -714,7 +714,8 @@ h3.text-b {
 
 @media only screen and (max-width:786px) {
     #header__search {
-        width: 102%;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .slider {
@@ -768,3 +769,130 @@ h3.text-b {
 /*
     Media Queries end
 */
+
+@keyframes revealNav{
+    from{
+       transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+.mobileNav{
+    position: fixed;
+    background-color: white;
+    color: black !important;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    animation-name: revealNav;
+    animation-timing-function:linear;
+    animation-duration: 500ms;
+    animation-delay: 0;
+    z-index: 1000000;
+    overflow-y: scroll;
+    padding-top: 40px;
+    display: none;
+}
+
+.mobileNav ul.parentContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.mobileNav .dropdown-container{
+    position: relative;
+
+}
+
+.mobileNav .dropdown{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    top: 0;
+}
+
+
+
+.mobileNav .dropdown.child{
+    position: relative;
+    left: 0;
+    top: inherit;
+}
+
+i.fa-plus{
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+i.fa-minus{
+    display: none;
+    margin-right: 10px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+.mobileNav .dropdown-container.parent:hover i.fa-minus{
+    display: block;
+}
+
+.mobileNav .dropdown-container.parent:hover i.fa-plus{
+    display: none;
+}
+
+
+.mobileNav .dropdown-container.parent:hover .dropdown.parent,
+.mobileNav .dropdown.parent:hover {
+    display: block;
+}
+
+.mobileNav .dropdown-container.child:hover ~ .parent_above
+ {
+    display: block;
+}
+
+.mobileNav .dropdown-container.parent:hover i.fa-minus:hover + div.dropdown.parent{
+    display: none !important;
+}
+
+.parent_above ul:hover,
+.parent_above:hover,
+.parent_above ul li:hover,
+.dropdown.child:hover > .parent_above,
+.dropdown-container:hover > .parent_above{
+    display: block;
+}
+
+.mobileNav .parent_above{
+    display: none;
+}
+
+.mobileNav .dropdown-container{
+    width: 100%;
+}
+
+.mobileNav .fa-plus{
+    margin-right: 10px;
+}
+
+.mobileNav .dropdown-container a{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.mobileNav ul{
+    overflow-y: scroll !important;
+}
+
+.mobileNav ul li{
+    padding-bottom: 0.8rem;
+}
