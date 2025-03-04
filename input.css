@@ -3,19 +3,19 @@
 @font-face {
     font-family: 'Noto Sans Light';
     font-style: normal;
-    src: url("../root/public/static/fonts/static/NotoSans-Light.ttf");
+    src: url("./public/static/fonts/static/NotoSans-Light.ttf");
 }
 
 @font-face {
     font-family: 'Noto Sans Regular';
     font-style: normal;
-    src: url("../root/public/static/fonts/static/NotoSans-Regular.ttf");
+    src: url("./public/static/fonts/static/NotoSans-Regular.ttf");
 }
 
 @font-face {
     font-family: 'Noto Sans Bold';
     font-style: normal;
-    src: url("../root/public/static/fonts/static/NotoSans-Bold.ttf");
+    src: url("./public/static/fonts/static/NotoSans-Bold.ttf");
 }
 
 
@@ -25,7 +25,7 @@
     --regular-font-family: "Noto Sans Regular", sans-serif;
     --bold-font-family:"Noto Sans Bold", sans-serif;
     --color-brand-primary: #000000;
-    --section-spacing:60px;
+    --section-spacing:40px;
 }
 
 #header__search {
@@ -89,6 +89,10 @@ main {
 
 .btn.btn-sm {
     font-size: 0.9rem;
+}
+
+.btn.btn-xsm{
+    font-size: 0.7rem;
 }
 
 .btn.btn-lg {
@@ -642,3 +646,27 @@ h3.text-b{
 .custom_container .fa-angle-right{
     right: -2.5%;
 }
+
+
+
+/* 
+    Media Queries
+*/
+
+@media only screen and (max-width:786px){
+    #header__search{
+        width: 102%;
+    }
+    
+    .slider{
+        height: 300px;
+    }
+    .custom_container{
+        padding-left: 25px;
+    }
+}
+
+
+/*
+    Media Queries end
+*/

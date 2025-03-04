@@ -4,7 +4,7 @@
   "description": "This is the initial version of Landing Site for MG Gadgets.\r Technologies used in this repository: **HTML, CSS, Tailwind CSS, Vanilla JS**",
   "main": "index.js",
   "scripts": {
-    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
+    "build": "npx @tailwindcss/cli -i ./input.css -o ./output.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -4,7 +4,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="./output.css" />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -21,27 +22,39 @@
 
 
             <div id="header__logo"
-                class="h-full mr-2.5 col-span-2 md:w-8/12 max-md:w-52 flex flex-col justify-center align-middle max-md:mr-1 w-full place-self-end">
-                <img alt="MG Gadgets Logo" class="w-full" src="./public/static/images/header-logo.png" />
+                class="max-sm:hidden h-full mr-2.5 col-span-2 md:w-8/12 max-md:w-52 flex flex-col justify-center align-middle max-md:mr-1 w-full place-self-end">
+                <img alt="MG Gadgets Logo" class="w-full max-sm:hidden" src="./public/static/images/header-logo.png" />
+            </div>
+            <div class="header__logo_mobile md:hidden">
+                <img alt="MG Gadgets Logo" style="width: 40px;"  class="w-fit" src="./public/static/images/logo_icon.JPG" />
+
             </div>
 
 
-
-            <div id="header__search" class="place-items-center col-span-4 w-full h-fit p-2 rounded-lg">
+            <div id="header__search" class="place-items-center max-sm:col-span-5  col-span-4 w-full h-fit p-2 rounded-lg">
                 <form id="header__searchForm" class="w-full h-fit flex">
-                    <img style="width:30px;height:30px;" class=" m-auto" src="./public/static/images/search-icon.png" />
-                    <input type="text" class="w-full pl-2 pt-1 pb-1" placeholder="Search mobiles, brands and more" />
+                    <span style="color: #7f7f7f87;" class="fa-solid fa-search m-auto"></span>
+                    <!-- <img style="width:24px;height:24px;" class="m-auto" src="./public/static/images/search-icon.png" /> -->
+                    <input type="text" class="w-full pl-2 pt-1 pb-1 pr-1 text-sm" placeholder="Search mobiles, brands and more" />
                 </form>
             </div>
             <!-- Empty Cell -->
             <!-- <div></div> -->
 
             <div id="header__icons"
-                class="w-full flex align-middle justify-start ml-2 col-span-2 container max-md:hidden">
+                class="w-full flex align-middle justify-start ml-2 max-sm:col-span-1 sm:col-span-2 container max-md:hidden">
                 <button class="mr-2 btn primary btn-sm text-white">Login</button>
                 <button class="mr-2 btn primary btn-sm text-white">Sign up</button>
                 <!-- <img class="w-10" src="./public/static/images/user-icon.png" /> -->
+            </div>
 
+            <div id="header__icons" class="md:hidden m-auto text-white flex">
+                <button class="ml-4 mr-2 btn primary btn-xsm text-white">
+                    <!-- <i class="fa-solid fa-right-to-bracket w-fit"></i> -->
+                    Login
+                </button>
+                <i class="fa-solid fa-location m-auto"></i>
+                <!-- <button class="ml-1 p-2 fa fa-location"></button> -->
             </div>
 
 
@@ -50,9 +63,9 @@
     </header>
     <!-- Header ends -->
     <div class="content">
-        <nav id="navbar" class="bg-black w-full p-1.5">
+        <nav id="navbar" class="bg-black w-full p-1.5 max-md:hidden">
             <ul
-                class="text-base font-medium w-full p-3 pb-0 flex flex-row justify-center align-middle text-white space-x-14">
+                class="text-sm font-medium w-full p-3 pb-0 flex flex-row justify-center align-middle text-white space-x-14">
                 <li>
                     <a href="#">Home</a>
                 </li>
@@ -148,74 +161,74 @@
                     <div class="feature__icon_image">
                         <img src="./public/static/images/brand_icons/apple.jpeg" />
                     </div>
-                    <span>
+                    <a href="">
                         Apple
-                    </span>
+                    </a>
                 </div>
                 <div class="feature__icon">
                     <div class="feature__icon_image">
                         <img src="./public/static/images/brand_icons/google.jpeg" />
                     </div>
-                    <span>
+                    <a href="">
                         Google
-                    </span>
+                    </a>
                 </div>
                 <div class="feature__icon">
                     <div class="feature__icon_image">
                         <img src="./public/static/images/brand_icons/motorola.jpeg" />
                     </div>
-                    <span>
+                    <a href="">
                         Motorola
-                    </span>
+                    </a>
                 </div>
                 <div class="feature__icon">
                     <div class="feature__icon_image">
                         <img src="./public/static/images/brand_icons/one_plus.jpeg" />
                     </div>
-                    <span>
+                    <a href="">
                         One Plus
-                    </span>
+                    </a>
                 </div>
                 <div class="feature__icon">
                     <div class="feature__icon_image">
                         <img src="./public/static/images/brand_icons/oppo.jpeg" />
                     </div>
-                    <span>
+                    <a href="">
                         Oppo
-                    </span>
+                    </a>
                 </div>
                 <div class="feature__icon">
                     <div class="feature__icon_image">
                         <img src="./public/static/images/brand_icons/realme.jpeg" />
                     </div>
-                    <span>
+                    <a href="">
                         Realme
-                    </span>
+                    </a>
                 </div>
                 <div class="feature__icon">
                     <div class="feature__icon_image">
                         <img
                             src="./public/static/images/brand_icons/Samsung Logo PNG Images (Transparent HD Photo Clipart).jpeg" />
                     </div>
-                    <span>
+                    <a href=""> 
                         Samsung
-                    </span>
+                    </a>
                 </div>
                 <div class="feature__icon">
                     <div class="feature__icon_image">
                         <img src="./public/static/images/brand_icons/vivo.jpeg" />
                     </div>
-                    <span>
+                    <a href="">
                         Vivo
-                    </span>
+                    </a>
                 </div>
                 <div class="feature__icon">
                     <div class="feature__icon_image">
                         <img src="./public/static/images/brand_icons/xiaomi.jpeg" />
                     </div>
-                    <span>
+                    <a href="">
                         Xiaomi
-                    </span>
+                    </a>
                 </div>
             </div>
 
@@ -250,7 +263,7 @@
 
             <div class="custom_container">
                 <h1 class="text-center text-l">15+ Brands</h1>
-                <div class="grid grid-cols-5 grid-rows-2 w-fit h-fit gap-5 m-auto place-items-center">
+                <div class="grid max-sm:grid-cols-2 md:grid-cols-5 md:grid-rows-2 w-fit h-fit gap-5 m-auto place-items-center">
 
                     <div class="card_box">
                         <img src="./public/static/images/brand_icons/apple.jpeg" />
@@ -620,7 +633,7 @@
             <img class="w-full" src="./public/static/images/banner_2.png" />
             <div class="custom_container">
                 <h1 class="text-center text-emphasis">Why Choose us?</h1>
-                <div class="grid grid-cols-2 grid-rows-1 w-full">
+                <div class="grid max-md:grid-cols-2 max-md:grid-rows-1 w-full max-sm:grid-cols-1">
                     <img class="p-3.5" src="./public/static/images/slides/slide2.jpg" />
                     <div>
                         <h3 class="pl-3.5 text-bold">Lorem ipsum dolor sit amet consectetur</h3>
@@ -641,7 +654,7 @@
             </div>
             <div class="custom_container">
                 <h1 class="text-center text-emphasis">Quality Service</h1>
-                <div class="grid grid-cols-2 grid-rows-1 w-full">
+                <div class="grid max-md:grid-cols-2 max-md:grid-rows-1 w-full max-sm:grid-cols-1">
 
                     <div>
                         <h3 class="pl-3.5 text-bold">Lorem ipsum dolor sit amet consectetur</h3>
@@ -668,9 +681,9 @@
         <!-- Main Content ends -->
 
     </div>
-    <footer class="grid bg-black w-full p-20 grid-cols-5 text-white">
+    <footer class="grid bg-black w-full p-20 md:grid-cols-5 max-sm:grid-cols-1 text-white">
         <div class="col-span-1 flex flex-col justify-between h-full">
-            <img class="pb-28" src="./public/static/images/header-logo.png" />
+            <img class="max-md:pb-28 max-sm:pb-4" src="./public/static/images/header-logo.png" />
             <div class="pt-4 social_icons">
                 <p class="text-center">Follow us on</p>
                 <div class="pt-4.5 text-2xl justify-center flex flex-row">
@@ -683,9 +696,9 @@
         </div>
         <div></div>
         <div></div>
-        <div class="col-span-2">
-            <div class="footer_nav grid grid-cols-4 gap-0.5">
-                <ul>
+        <div class="md:col-span-2 max-sm:col-span-1 max-sm:pt-24">
+            <div class="footer_nav grid md:grid-cols-4 gap-0.5 max-sm:grid-cols-1">
+                <ul class="max-sm:pt-3">
                     <li class="text-bold pb-1.5">Services</li>
                     <li>
                         <a href="">
@@ -709,7 +722,7 @@
                     </li>
                     
                 </ul>
-                <ul>
+                <ul class="max-sm:pt-3">
                     <li class="text-bold pb-1.5">Buy Phone</li>
                     <li>
                         <a href="">
@@ -732,7 +745,7 @@
                         </a>
                     </li>
                 </ul>
-                <ul>
+                <ul class="max-sm:pt-3">
                     <li class="text-bold pb-1.5">Sell Phone</li>
                     <li>
                         <a href="">
@@ -755,7 +768,7 @@
                         </a>
                     </li>
                 </ul>
-                <ul>
+                <ul class="max-sm:pt-3">
                     <li class="text-bold pb-1.5">Repair Phone</li>
                     <li>
                         <a href="">
@@ -781,8 +794,8 @@
 
             </div>
         </div>
-
     </footer>
+    <p style="color: lightgray;" class="text-sm text-center p-3 bg-black">Copyright <i class="far fa-copyright"></i> <span id="year"></span> MG Gadgets All Rights Reserved</p>
     <!-- Inline Scripts -->
     <script>
 
