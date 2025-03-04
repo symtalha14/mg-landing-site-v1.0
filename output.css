@@ -1384,6 +1384,9 @@ h3.text-b {
   .custom_container {
     padding-left: 25px;
   }
+  .custom_container.p-0 {
+    padding-left: 0;
+  }
   .custom_container .fa-angle-right, .custom_container .fa-angle-left {
     right: 0.9%;
   }
