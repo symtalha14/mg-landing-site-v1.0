@@ -649,8 +649,8 @@
   .gap-0\.5 {
     gap: calc(var(--spacing) * 0.5);
   }
-  .gap-5 {
-    gap: calc(var(--spacing) * 5);
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
   }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
@@ -671,13 +671,6 @@
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
-  }
-  .border-b-2 {
-    border-bottom-style: var(--tw-border-style);
-    border-bottom-width: 2px;
-  }
-  .border-b-gray-300 {
-    border-bottom-color: var(--color-gray-300);
   }
   .bg-black {
     background-color: var(--color-black);
@@ -1063,26 +1056,30 @@ input:focus, input:focus-visible {
 }
 .feature__icons {
   overflow-x: scroll;
+  background-color: #90ba9d14;
 }
 .feature__icon {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  font-weight: bold;
 }
 .feature__icon_image {
-  width: 85px;
-  height: 85px;
+  width: 70px;
+  height: 70px;
   background-color: #ffffff;
   margin: 10px;
+  margin-bottom: 2px;
   border-radius: 100%;
   display: grid;
   place-content: center;
   overflow: hidden;
   border: 1px solid lightgray;
 }
-.feature__icon span {
-  font-weight: bold;
+.feature__icon a {
+  font-family: var(--regular-font-family);
+  font-size: 0.8rem;
 }
 main {
   margin-left: 10%;
@@ -1112,7 +1109,6 @@ main {
   width: 100%;
   height: fit-content;
   position: relative;
-  background-color: #000000;
 }
 .slider .slide {
   min-width: 100% !important;
@@ -1399,11 +1395,11 @@ h3.text-b {
 .ticker-container {
   width: 100%;
   overflow: hidden;
-  background-color: rgb(253, 92, 149);
+  background-color: rgb(93, 113, 169);
   color: #FFFFFF;
   padding: 10px;
   font-family: var(--medium-font-family);
-  font-size: 1.5rem;
+  font-size: 0.9rem;
   font-weight: bold;
   letter-spacing: 0.1cap;
 }
@@ -1427,7 +1423,7 @@ h3.text-b {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-name: ticker;
-  animation-duration: 13s;
+  animation-duration: 10s;
 }
 .ticker-transition:hover {
   animation-play-state: paused;
@@ -1459,7 +1455,7 @@ h3.text-b {
     box-sizing: border-box;
   }
   .slider {
-    height: 300px;
+    height: 200px;
   }
   .custom_container.items_container {
     padding: 25px;
@@ -1472,8 +1468,11 @@ h3.text-b {
     right: 0.9%;
   }
   .card_box {
-    width: 135px;
-    height: 135px;
+    width: 100px;
+    height: 100px;
+    box-shadow: none;
+    border: 1px solid rgba(211, 211, 211, 0.419);
+    border-radius: 3px;
   }
   .mobile_card {
     width: 180px;
