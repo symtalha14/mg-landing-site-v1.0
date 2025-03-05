@@ -3,1020 +3,1167 @@
 <!-- MG Gadgets v1.0 -->
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="./output.css" />
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <meta name="theme-color" content="#000000" />
-  <title>MG Gadgets</title>
+    <link rel="stylesheet" href="./output.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta name="theme-color" content="#000000" />
+    <title>MG Gadgets</title>
 </head>
 
 <body>
 
-  <!-- Header begins -->
+    <!-- Header begins -->
 
-  <header id="header">
-    <div id="sticky-header" class="bg-gradient-to-b from-black to-black m-0 p-3 pt-2.5 pb-2.5 w-full grid grid-cols-8 align-middle max-sm:flex max-sm:flex max-sm:flex-row max-sm:justify-between max-sm:align-center">
-
-
-      <div id="header__logo" class="max-sm:hidden h-full mr-2.5 col-span-2 md:w-8/12 max-md:w-52 flex flex-col justify-center align-middle max-md:mr-1 w-full place-self-end">
-        <img alt="MG Gadgets Logo" class="w-full max-sm:hidden" src="./public/static/images/header-logo.png" />
-      </div>
-      <div class="header__logo_mobile md:hidden">
-        <img alt="MG Gadgets Logo" style="width: 140px;" class="m-auto w-fit" src="./public/static/images/header-logo.png" />
-
-      </div>
+    <header id="header">
+        <div id="sticky-header"
+            class="bg-gradient-to-b from-black to-black m-0 p-3 pt-2.5 pb-2.5 w-full grid grid-cols-8 align-middle max-sm:flex max-sm:flex max-sm:flex-row max-sm:justify-between max-sm:align-center">
 
 
-      <div id="header__search" class="max-sm:hidden place-items-center max-sm:col-span-5  col-span-4 w-full h-fit p-2 rounded-lg">
-        <form id="header__searchForm" class="w-full h-fit flex">
-          <span style="color: #7f7f7f87;" class="fa-solid fa-search m-auto"></span>
-          <!-- <img style="width:24px;height:24px;" class="m-auto" src="./public/static/images/search-icon.png" /> -->
-          <input type="text" class="w-full pl-2 pt-1 pb-1 pr-1 text-sm" placeholder="Search mobiles, brands and more" />
-        </form>
-      </div>
-      <!-- Empty Cell -->
-      <!-- <div></div> -->
+            <div id="header__logo"
+                class="max-sm:hidden h-full mr-2.5 col-span-2 md:w-8/12 max-md:w-52 flex flex-col justify-center align-middle max-md:mr-1 w-full place-self-end">
+                <img alt="MG Gadgets Logo" class="w-full max-sm:hidden" src="./public/static/images/header-logo.png" />
+            </div>
+            <div class="header__logo_mobile md:hidden">
+                <img alt="MG Gadgets Logo" style="width: 140px;" class="m-auto w-fit"
+                    src="./public/static/images/header-logo.png" />
 
-      <div id="header__icons" class="w-full flex align-middle justify-start ml-2 max-sm:col-span-1 sm:col-span-2 container max-md:hidden">
-        <button class="mr-2 btn primary btn-sm text-white">Login</button>
-        <button class="mr-2 btn primary btn-sm text-white">Sign up</button>
-        <!-- <img class="w-10" src="./public/static/images/user-icon.png" /> -->
-      </div>
-
-      <div id="header__icons" class="md:hidden text-white flex">
-        <span class="fa-solid fa-bars text-white m-auto" id="burgerMenu"></span>
-        <!-- <i class="fa-solid fa-location m-auto"></i> -->
-        <!-- <button class="ml-1 p-2 fa fa-location"></button> -->
-      </div>
+            </div>
 
 
-    </div>
+            <div id="header__search"
+                class="max-sm:hidden place-items-center max-sm:col-span-5  col-span-4 w-full h-fit p-2 rounded-lg">
+                <form id="header__searchForm" class="w-full h-fit flex">
+                    <span style="color: #7f7f7f87;" class="fa-solid fa-search m-auto"></span>
+                    <!-- <img style="width:24px;height:24px;" class="m-auto" src="./public/static/images/search-icon.png" /> -->
+                    <input type="text" class="w-full pl-2 pt-1 pb-1 pr-1 text-sm"
+                        placeholder="Search mobiles, brands and more" />
+                </form>
+            </div>
+            <!-- Empty Cell -->
+            <!-- <div></div> -->
 
-    <div id="header__search" class="md:hidden bg-grey-500  max-sm:col-span-5 mt-2 col-span-4 w-fit h-fit p-1  pb-2.5 rounded-lg">
-      <form style="border: 1px solid rgba(211, 211, 211, 0.6)" id="header__searchForm" class="rounded-lg p-3 w-full h-fit flex">
-        <span style="color: #7f7f7f87;" class="fa-solid fa-search m-auto"></span>
-        <!-- <img style="width:24px;height:24px;" class="m-auto" src="./public/static/images/search-icon.png" /> -->
-        <input type="text" class="w-full pl-2 pt-1 pb-1 pr-1 text-sm" placeholder="Search mobiles, brands and more" />
-      </form>
-    </div>
-  </header>
-  <!-- Header ends -->
-  <div class="content">
-    <nav id="navbar" class="md:hidden mobileNav bg-black w-full p-1.5">
-      <span id="closeMenu" style="position: absolute;top:15px;right:15px;" class="fa-solid fa-times text-black"></span>  
-      <ul class="parentContainer font-medium w-full p-3 pb-0 flex flex-row justify-center align-middle md:text-white space-x-14">
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li class="dropdown-container parent">
-          <a href="#">Buy Phone&nbsp;
-          </a>
-          <i class="fa fa-plus"></i>
-          <i class="fa fa-minus"></i>
-          <ul class="dropdown parent">
-            <li>
-              <a href="/">Item 1</a>
-            </li>
-            <li>
-              <a href="/">Item 1</a>
-            </li>
-            <li class="dropdown-container child">
-              <a href="/">Item 1</a>
-            </li>
-            <li class="parent_above">
-              <ul class="">
+            <div id="header__icons"
+                class="w-full flex align-middle justify-start ml-2 max-sm:col-span-1 sm:col-span-2 container max-md:hidden">
+                <button class="mr-2 btn primary btn-sm text-white">Login</button>
+                <button class="mr-2 btn primary btn-sm text-white">Sign up</button>
+                <!-- <img class="w-10" src="./public/static/images/user-icon.png" /> -->
+            </div>
+
+            <div id="header__icons" class="md:hidden text-white flex">
+                <span class="fa-solid fa-bars text-white m-auto" id="burgerMenu"></span>
+                <!-- <i class="fa-solid fa-location m-auto"></i> -->
+                <!-- <button class="ml-1 p-2 fa fa-location"></button> -->
+            </div>
+
+
+        </div>
+
+        <div id="header__search"
+            class="md:hidden bg-grey-500  max-sm:col-span-5 mt-2 col-span-4 w-fit h-fit p-1  pb-2.5 rounded-lg">
+            <form style="border: 1px solid rgba(211, 211, 211, 0.6)" id="header__searchForm"
+                class="rounded-lg p-3 w-full h-fit flex">
+                <span style="color: #7f7f7f87;" class="fa-solid fa-search m-auto"></span>
+                <!-- <img style="width:24px;height:24px;" class="m-auto" src="./public/static/images/search-icon.png" /> -->
+                <input type="text" class="w-full pl-2 pt-1 pb-1 pr-1 text-sm"
+                    placeholder="Search mobiles, brands and more" />
+            </form>
+        </div>
+    </header>
+    <!-- Header ends -->
+    <div class="content">
+        <nav id="navbar" class="md:hidden mobileNav bg-black w-full p-1.5">
+            <span id="closeMenu" style="position: absolute;top:15px;right:15px;"
+                class="fa-solid fa-times text-black"></span>
+            <ul
+                class="parentContainer font-medium w-full p-3 pb-0 flex flex-row justify-center align-middle md:text-white space-x-14">
                 <li>
-                  <a href="">Item Child</a>
+                    <a href="#">Home</a>
                 </li>
-                <li class="">
-                  <a href="">Item Child 2</a>
+                <li class="dropdown-container parent">
+                    <a href="#">Buy Phone&nbsp;
+                    </a>
+                    <i class="fa fa-plus"></i>
+                    <i class="fa fa-minus"></i>
+                    <ul class="dropdown parent">
+                        <li>
+                            <a href="/">Item 1</a>
+                        </li>
+                        <li>
+                            <a href="/">Item 1</a>
+                        </li>
+                        <li class="dropdown-container child">
+                            <a href="/">Item 1</a>
+                        </li>
+                        <li class="parent_above">
+                            <ul class="">
+                                <li>
+                                    <a href="">Item Child</a>
+                                </li>
+                                <li class="">
+                                    <a href="">Item Child 2</a>
 
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="/">Item 1</a>
-            </li>
-            <li>
-              <a href="/">Item 1</a>
-            </li>
-            <li>
-              <a href="/">Item 1</a>
-            </li>
-            <li class="dropdown-container child">
-              <a href="/">Item 1</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/">Item 1</a>
+                        </li>
+                        <li>
+                            <a href="/">Item 1</a>
+                        </li>
+                        <li>
+                            <a href="/">Item 1</a>
+                        </li>
+                        <li class="dropdown-container child">
+                            <a href="/">Item 1</a>
 
-            </li>
-            <li class="parent_above">
-              <ul class="">
-                <li>
-                  <a href="">Item Child</a>
+                        </li>
+                        <li class="parent_above">
+                            <ul class="">
+                                <li>
+                                    <a href="">Item Child</a>
+                                </li>
+                                <li class="dropdown-container child">
+                                    <a href="">Item Child 2</a>
+                                </li>
+                            </ul>
+                        <li class="parent_above">
+                            <ul class="">
+                                <li>
+                                    <a href="">Item Child Child</a>
+                                </li>
+                            </ul>
+                        </li>
                 </li>
-                <li class="dropdown-container child">
-                  <a href="">Item Child 2</a>
-                </li>
-              </ul>
-            <li class="parent_above">
-              <ul class="">
-                <li>
-                  <a href="">Item Child Child</a>
-                </li>
-              </ul>
-            </li>
-        </li>
 
-      </ul>
-      </li>
-      <li class="dropdown-container parent">
-        <a href="#">Sell Phone&nbsp;<i class="fa fa-plus"></i>
-          <i class="fa fa-minus"></i>
-        </a>
-      </li>
-      <li class="dropdown-container parent">
-        <a href="#">Repair Phone&nbsp;<i class="fa fa-plus"></i>
-          <i class="fa fa-minus"></i>
-        </a>
-        <ul class="dropdown parent">
-          <li>
-            <a href="">Test Item</a>
-          </li>
-          <li class="dropdown-container child">
-            <a href="">Test Item</a>
-
-          </li>
-          <li class="parent_above">
-            <ul class="">
-              <li>
-                <a href="">
-                  Child Test Item
-                </a>
-              </li>
             </ul>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Partner Program</a>
-      </li>
-      <li>
-        <a href="#">Blog</a>
-      </li>
-      <li>
-        <a href="#">About</a>
-      </li>
-      </ul>
-
-      <ul class="max-sm:hidden  font-medium w-full p-3 pb-0 flex flex-row justify-center align-middle md:text-white space-x-14">
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li class="dropdown-container parent">
-          <a href="#">Buy Phone&nbsp;<i class="fa fa-angle-down"></i></a>
-          <ul class="dropdown parent">
-            <li>
-              <a href="/">Item 1</a>
             </li>
-            <li>
-              <a href="/">Item 1</a>
-            </li>
-            <li class="dropdown-container child">
-              <a href="/">Item 1</a>
-              <ul class="dropdown child">
-                <li>
-                  <a href="">Item Child</a>
-                </li>
-                <li class="dropdown-container child">
-                  <a href="">Item Child 2</a>
-                  <ul class="dropdown child">
-                    <li>
-                      <a href="">Item Child Child</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="/">Item 1</a>
-            </li>
-            <li>
-              <a href="/">Item 1</a>
-            </li>
-            <li>
-              <a href="/">Item 1</a>
-            </li>
-            <li class="dropdown-container child">
-              <a href="/">Item 1</a>
-              <ul class="dropdown child">
-                <li>
-                  <a href="">Item Child</a>
-                </li>
-                <li class="dropdown-container child">
-                  <a href="">Item Child 2</a>
-                  <ul class="dropdown child">
-                    <li>
-                      <a href="">Item Child Child</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li class="dropdown-container parent">
-          <a href="#">Sell Phone&nbsp;<i class="fa fa-angle-down"></i></a>
-        </li>
-        <li class="dropdown-container parent">
-          <a href="#">Repair Phone&nbsp;<i class="fa fa-angle-down"></i></a>
-          <ul class="dropdown parent">
-            <li>
-              <a href="">Test Item</a>
-            </li>
-            <li class="dropdown-container child">
-              <a href="">Test Item</a>
-              <ul class="dropdown child">
-                <li>
-                  <a href="">
-                    Child Test Item
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">Partner Program</a>
-        </li>
-        <li>
-          <a href="#">Blog</a>
-        </li>
-        <li>
-          <a href="#">About</a>
-        </li>
-      </ul>
-    </nav>
-    <nav id="navbar" class="max-sm:hidden bg-black w-full p-1.5">
-
-      <ul class="max-md:hidden parentContainer font-medium w-full p-3 pb-0 flex flex-row justify-center align-middle md:text-white space-x-14">
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li class="dropdown-container parent">
-          <a href="#">Buy Phone&nbsp;<i class="fa fa-angle-down"></i></a>
-          <ul class="dropdown parent">
-            <li>
-              <a href="/">Item 1</a>
-            </li>
-            <li>
-              <a href="/">Item 1</a>
-            </li>
-            <li class="dropdown-container child">
-              <a href="/">Item 1</a>
-              <ul class="dropdown child">
-                <li>
-                  <a href="">Item Child</a>
-                </li>
-                <li class="dropdown-container child">
-                  <a href="">Item Child 2</a>
-
-
-                  <ul class="dropdown child">
-                    <li>
-                      <a href="">Item Child Child</a>
-                    </li>
-                  </ul>
-
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="/">Item 1</a>
-            </li>
-            <li>
-              <a href="/">Item 1</a>
-            </li>
-            <li>
-              <a href="/">Item 1</a>
-            </li>
-            <li class="dropdown-container child">
-              <a href="/">Item 1</a>
-              <ul class="dropdown child">
-                <li>
-                  <a href="">Item Child</a>
-                <li class="dropdown-container child">
-                  <a href="">Item Child 2</a>
-                  <ul class="dropdown child">
-                    <li>
-                      <a href="">Item Child Child</a>
-                    </li>
-                  </ul>
-                </li>
-            </li>
-
-          </ul>
-        </li>
-      </ul>
-      </li>
-      <li class="dropdown-container parent">
-        <a href="#">Sell Phone&nbsp;<i class="fa fa-angle-down"></i></a>
-      </li>
-      <li class="dropdown-container parent">
-        <a href="#">Repair Phone&nbsp;<i class="fa fa-angle-down"></i></a>
-        <ul class="dropdown parent">
-          <li>
-            <a href="">Test Item</a>
-          </li>
-          <li class="dropdown-container child">
-            <a href="">Test Item</a>
-            <ul class="dropdown child">
-              <li>
-                <a href="">
-                  Child Test Item
+            <li class="dropdown-container parent">
+                <a href="#">Sell Phone&nbsp;<i class="fa fa-plus"></i>
+                    <i class="fa fa-minus"></i>
                 </a>
-              </li>
+            </li>
+            <li class="dropdown-container parent">
+                <a href="#">Repair Phone&nbsp;<i class="fa fa-plus"></i>
+                    <i class="fa fa-minus"></i>
+                </a>
+                <ul class="dropdown parent">
+                    <li>
+                        <a href="">Test Item</a>
+                    </li>
+                    <li class="dropdown-container child">
+                        <a href="">Test Item</a>
+
+                    </li>
+                    <li class="parent_above">
+                        <ul class="">
+                            <li>
+                                <a href="">
+                                    Child Test Item
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Partner Program</a>
+            </li>
+            <li>
+                <a href="#">Blog</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
             </ul>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Partner Program</a>
-      </li>
-      <li>
-        <a href="#">Blog</a>
-      </li>
-      <li>
-        <a href="#">About</a>
-      </li>
-      </ul>
+
+            <ul
+                class="max-sm:hidden  font-medium w-full p-3 pb-0 flex flex-row justify-center align-middle md:text-white space-x-14">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li class="dropdown-container parent">
+                    <a href="#">Buy Phone&nbsp;<i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown parent">
+                        <li>
+                            <a href="/">Item 1</a>
+                        </li>
+                        <li>
+                            <a href="/">Item 1</a>
+                        </li>
+                        <li class="dropdown-container child">
+                            <a href="/">Item 1</a>
+                            <ul class="dropdown child">
+                                <li>
+                                    <a href="">Item Child</a>
+                                </li>
+                                <li class="dropdown-container child">
+                                    <a href="">Item Child 2</a>
+                                    <ul class="dropdown child">
+                                        <li>
+                                            <a href="">Item Child Child</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/">Item 1</a>
+                        </li>
+                        <li>
+                            <a href="/">Item 1</a>
+                        </li>
+                        <li>
+                            <a href="/">Item 1</a>
+                        </li>
+                        <li class="dropdown-container child">
+                            <a href="/">Item 1</a>
+                            <ul class="dropdown child">
+                                <li>
+                                    <a href="">Item Child</a>
+                                </li>
+                                <li class="dropdown-container child">
+                                    <a href="">Item Child 2</a>
+                                    <ul class="dropdown child">
+                                        <li>
+                                            <a href="">Item Child Child</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown-container parent">
+                    <a href="#">Sell Phone&nbsp;<i class="fa fa-angle-down"></i></a>
+                </li>
+                <li class="dropdown-container parent">
+                    <a href="#">Repair Phone&nbsp;<i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown parent">
+                        <li>
+                            <a href="">Test Item</a>
+                        </li>
+                        <li class="dropdown-container child">
+                            <a href="">Test Item</a>
+                            <ul class="dropdown child">
+                                <li>
+                                    <a href="">
+                                        Child Test Item
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Partner Program</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+            </ul>
+        </nav>
+        <nav id="navbar" class="max-sm:hidden bg-black w-full p-1.5">
+
+            <ul
+                class="max-md:hidden parentContainer font-medium w-full p-3 pb-0 flex flex-row justify-center align-middle md:text-white space-x-14">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li class="dropdown-container parent">
+                    <a href="#">Buy Phone&nbsp;<i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown parent">
+                        <li>
+                            <a href="/">Item 1</a>
+                        </li>
+                        <li>
+                            <a href="/">Item 1</a>
+                        </li>
+                        <li class="dropdown-container child">
+                            <a href="/">Item 1</a>
+                            <ul class="dropdown child">
+                                <li>
+                                    <a href="">Item Child</a>
+                                </li>
+                                <li class="dropdown-container child">
+                                    <a href="">Item Child 2</a>
 
 
-    </nav>
+                                    <ul class="dropdown child">
+                                        <li>
+                                            <a href="">Item Child Child</a>
+                                        </li>
+                                    </ul>
 
-    <!-- Main Content -->
-    <main>
-      <div class="feature__icons justify-evenly pb-2 container flex flex-row w-full border-b-2 border-b-gray-300">
-        <div class="feature__icon">
-          <div class="feature__icon_image">
-            <img src="./public/static/images/brand_icons/apple.jpeg" />
-          </div>
-          <a href="">
-            Apple
-          </a>
-        </div>
-        <div class="feature__icon">
-          <div class="feature__icon_image">
-            <img src="./public/static/images/brand_icons/google.jpeg" />
-          </div>
-          <a href="">
-            Google
-          </a>
-        </div>
-        <div class="feature__icon">
-          <div class="feature__icon_image">
-            <img src="./public/static/images/brand_icons/motorola.jpeg" />
-          </div>
-          <a href="">
-            Motorola
-          </a>
-        </div>
-        <div class="feature__icon">
-          <div class="feature__icon_image">
-            <img src="./public/static/images/brand_icons/one_plus.jpeg" />
-          </div>
-          <a href="">
-            One Plus
-          </a>
-        </div>
-        <div class="feature__icon">
-          <div class="feature__icon_image">
-            <img src="./public/static/images/brand_icons/oppo.jpeg" />
-          </div>
-          <a href="">
-            Oppo
-          </a>
-        </div>
-        <div class="feature__icon">
-          <div class="feature__icon_image">
-            <img src="./public/static/images/brand_icons/realme.jpeg" />
-          </div>
-          <a href="">
-            Realme
-          </a>
-        </div>
-        <div class="feature__icon">
-          <div class="feature__icon_image">
-            <img src="./public/static/images/brand_icons/Samsung Logo PNG Images (Transparent HD Photo Clipart).jpeg" />
-          </div>
-          <a href="">
-            Samsung
-          </a>
-        </div>
-        <div class="feature__icon">
-          <div class="feature__icon_image">
-            <img src="./public/static/images/brand_icons/vivo.jpeg" />
-          </div>
-          <a href="">
-            Vivo
-          </a>
-        </div>
-        <div class="feature__icon">
-          <div class="feature__icon_image">
-            <img src="./public/static/images/brand_icons/xiaomi.jpeg" />
-          </div>
-          <a href="">
-            Xiaomi
-          </a>
-        </div>
-      </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/">Item 1</a>
+                        </li>
+                        <li>
+                            <a href="/">Item 1</a>
+                        </li>
+                        <li>
+                            <a href="/">Item 1</a>
+                        </li>
+                        <li class="dropdown-container child">
+                            <a href="/">Item 1</a>
+                            <ul class="dropdown child">
+                                <li>
+                                    <a href="">Item Child</a>
+                                <li class="dropdown-container child">
+                                    <a href="">Item Child 2</a>
+                                    <ul class="dropdown child">
+                                        <li>
+                                            <a href="">Item Child Child</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                        </li>
 
-      <!-- Slideshow starts here -->
-      <div class="slideshow_wrapper">
-        <div id="next">
-          <span>
-            &rsaquo;
-          </span>
-        </div>
-
-        <div id="previous">&lsaquo;</div>
-
-        <div class="slider">
-
-          <div data-slide="3" class="slide">
-            <img src="./public/static/images/slides/slide3.jpg" alt="" srcset="">
-          </div>
-          <div data-slide="2" class="slide">
-            <img src="./public/static/images/slides/slide2.jpg" alt="" srcset="">
-          </div>
-          <div data-slide="1" class="slide">
-            <img src="./public/static/images/slides/slide1.jpg" alt="" srcset="">
-          </div>
-        </div>
-
-      </div>
-      <!-- slideshow ends here -->
-      <div class="w-full m-0">
-        <div class="ticker-wrap">
-          <div class="ticker">
-            <span class="item-collection-1">
-              <span class="item">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae vel fuga quaerat
-                obcaecati magnam dicta assumenda explicabo pariatur illo veritatis quo, quas harum quis
-                dignissimos! Odit, eos laudantium!
-              </span>
-            </span>
-          </div>
-          <div>
-          </div>
-        </div>
-
-        <div class="custom_container">
-          <h1 class="text-center text-l">15+ Brands</h1>
-          <div class="grid max-sm:grid-cols-2 md:grid-cols-5 md:grid-rows-2 w-fit h-fit gap-5 m-auto place-items-center">
-
-            <div class="card_box">
-              <img src="./public/static/images/brand_icons/apple.jpeg" />
-            </div>
-            <div class="card_box">
-              <img src="./public/static/images/brand_icons/google.jpeg" />
-            </div>
-            <div class="card_box">
-              <img src="./public/static/images/brand_icons/motorola.jpeg" />
-            </div>
-            <div class="card_box">
-              <img src="./public/static/images/brand_icons/one_plus.jpeg" />
-            </div>
-            <div class="card_box">
-              <img src="./public/static/images/brand_icons/oppo.jpeg" />
-            </div>
-
-            <div class="card_box">
-              <img src="./public/static/images/brand_icons/realme.jpeg" />
-            </div>
-            <div class="card_box">
-              <img src="./public/static/images/brand_icons/Samsung Logo PNG Images (Transparent HD Photo Clipart).jpeg" />
-            </div>
-            <div class="card_box">
-              <img src="./public/static/images/brand_icons/vivo.jpeg" />
-            </div>
-            <div class="card_box">
-              <img src="./public/static/images/brand_icons/xiaomi.jpeg" />
-            </div>
-            <div class="card_box">
-              <img src="./public/static/images/brand_icons/poco.jpg" />
-            </div>
+                    </ul>
+                </li>
+            </ul>
+            </li>
+            <li class="dropdown-container parent">
+                <a href="#">Sell Phone&nbsp;<i class="fa fa-angle-down"></i></a>
+            </li>
+            <li class="dropdown-container parent">
+                <a href="#">Repair Phone&nbsp;<i class="fa fa-angle-down"></i></a>
+                <ul class="dropdown parent">
+                    <li>
+                        <a href="">Test Item</a>
+                    </li>
+                    <li class="dropdown-container child">
+                        <a href="">Test Item</a>
+                        <ul class="dropdown child">
+                            <li>
+                                <a href="">
+                                    Child Test Item
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Partner Program</a>
+            </li>
+            <li>
+                <a href="#">Blog</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            </ul>
 
 
-          </div>
+        </nav>
 
-        </div>
-        <div class="custom_container md flex flex-row justify-center align-middle">
-          <button class="ml-auto btn primary text-black btn-md m-auto">View more</button>
-        </div>
-        <div class="custom_container">
-          <h1 class="text-left">Top Selling Mobiles</h1>
-          <span data-controller="1" class="fa-solid fa-angle-left"></span>
-          <span data-controller="1" class="fa-solid fa-angle-right"></span>
-          <div data-item-container="1" class="items_container flex flex-row w-full">
-            <div class="grid-cols-1 mobile_card grid-rows-5">
-              <img class="mgVerified" src="./public/static/images/mg-verified.png" />
-              <img src="./public/static/images/mobiles/apple.jpeg" />
-              <div class="rating">
-                <span class="fa fa-star" style="color: gold;"></span> 4.8
-              </div>
-              <div class="discount_strip">
-                <span class="fa fa-inr"></span> 2,000 off
-              </div>
-              <div class="title">
-                <a href="">
-                  Apple iPhone 12 Pro Max | 256GB
-                </a>
-              </div>
-              <div class="pricing">
-
-                <div class="price">
-                  <span class="fa fa-inr"> </span> 21,000
+        <!-- Main Content -->
+        <main>
+            <div class="feature__icons justify-evenly pb-2 container flex flex-row w-full border-b-2 border-b-gray-300">
+                <div class="feature__icon">
+                    <div class="feature__icon_image">
+                        <img src="./public/static/images/brand_icons/apple.jpeg" />
+                    </div>
+                    <a href="">
+                        Apple
+                    </a>
                 </div>
-                <span class="original_price">25,000</span>
-                <span class="discount_percent">-53%</span>
-
-              </div>
-            </div>
-            <div class="grid-cols-1 mobile_card grid-rows-5">
-              <img class="mgVerified" src="./public/static/images/mg-verified.png" />
-              <img src="./public/static/images/mobiles/apple.jpeg" />
-              <div class="rating">
-                <span class="fa fa-star" style="color: gold;"></span> 4.8
-              </div>
-              <div class="discount_strip">
-                <span class="fa fa-inr"></span> 2,000 off
-              </div>
-              <div class="title">
-                Apple iPhone 12 Pro Max | 256GB
-              </div>
-              <div class="pricing">
-
-                <div class="price">
-                  <span class="fa fa-inr"> </span> 21,000
+                <div class="feature__icon">
+                    <div class="feature__icon_image">
+                        <img src="./public/static/images/brand_icons/google.jpeg" />
+                    </div>
+                    <a href="">
+                        Google
+                    </a>
                 </div>
-                <span class="original_price">25,000</span>
-                <span class="discount_percent">-53%</span>
-
-              </div>
-            </div>
-            <div class="grid-cols-1 mobile_card grid-rows-5">
-              <img class="mgVerified" src="./public/static/images/mg-verified.png" />
-              <img src="./public/static/images/mobiles/apple.jpeg" />
-              <div class="rating">
-                <span class="fa fa-star" style="color: gold;"></span> 4.8
-              </div>
-              <div class="discount_strip">
-                <span class="fa fa-inr"></span> 2,000 off
-              </div>
-              <div class="title">
-                Apple iPhone 12 Pro Max | 256GB
-              </div>
-              <div class="pricing">
-
-                <div class="price">
-                  <span class="fa fa-inr"> </span> 21,000
+                <div class="feature__icon">
+                    <div class="feature__icon_image">
+                        <img src="./public/static/images/brand_icons/motorola.jpeg" />
+                    </div>
+                    <a href="">
+                        Motorola
+                    </a>
                 </div>
-                <span class="original_price">25,000</span>
-                <span class="discount_percent">-53%</span>
-
-              </div>
-            </div>
-            <div class="grid-cols-1 mobile_card grid-rows-5">
-              <img class="mgVerified" src="./public/static/images/mg-verified.png" />
-              <img src="./public/static/images/mobiles/apple.jpeg" />
-              <div class="rating">
-                <span class="fa fa-star" style="color: gold;"></span> 4.8
-              </div>
-              <div class="discount_strip">
-                <span class="fa fa-inr"></span> 2,000 off
-              </div>
-              <div class="title">
-                Apple iPhone 12 Pro Max | 256GB
-              </div>
-              <div class="pricing">
-
-                <div class="price">
-                  <span class="fa fa-inr"> </span> 21,000
+                <div class="feature__icon">
+                    <div class="feature__icon_image">
+                        <img src="./public/static/images/brand_icons/one_plus.jpeg" />
+                    </div>
+                    <a href="">
+                        One Plus
+                    </a>
                 </div>
-                <span class="original_price">25,000</span>
-                <span class="discount_percent">-53%</span>
-
-              </div>
-            </div>
-            <div class="grid-cols-1 mobile_card grid-rows-5">
-              <img class="mgVerified" src="./public/static/images/mg-verified.png" />
-              <img src="./public/static/images/mobiles/apple.jpeg" />
-              <div class="rating">
-                <span class="fa fa-star" style="color: gold;"></span> 4.8
-              </div>
-              <div class="discount_strip">
-                <span class="fa fa-inr"></span> 2,000 off
-              </div>
-              <div class="title">
-                Apple iPhone 12 Pro Max | 256GB
-              </div>
-              <div class="pricing">
-
-                <div class="price">
-                  <span class="fa fa-inr"> </span> 21,000
+                <div class="feature__icon">
+                    <div class="feature__icon_image">
+                        <img src="./public/static/images/brand_icons/oppo.jpeg" />
+                    </div>
+                    <a href="">
+                        Oppo
+                    </a>
                 </div>
-                <span class="original_price">25,000</span>
-                <span class="discount_percent">-53%</span>
-
-              </div>
-            </div>
-            <div class="grid-cols-1 mobile_card grid-rows-5">
-              <img class="mgVerified" src="./public/static/images/mg-verified.png" />
-              <img src="./public/static/images/mobiles/apple.jpeg" />
-              <div class="rating">
-                <span class="fa fa-star" style="color: gold;"></span> 4.8
-              </div>
-              <div class="discount_strip">
-                <span class="fa fa-inr"></span> 2,000 off
-              </div>
-              <div class="title">
-                Apple iPhone 12 Pro Max | 256GB
-              </div>
-              <div class="pricing">
-
-                <div class="price">
-                  <span class="fa fa-inr"> </span> 21,000
+                <div class="feature__icon">
+                    <div class="feature__icon_image">
+                        <img src="./public/static/images/brand_icons/realme.jpeg" />
+                    </div>
+                    <a href="">
+                        Realme
+                    </a>
                 </div>
-                <span class="original_price">25,000</span>
-                <span class="discount_percent">-53%</span>
-
-              </div>
-            </div>
-            <div class="grid-cols-1 mobile_card grid-rows-5">
-              <img class="mgVerified" src="./public/static/images/mg-verified.png" />
-              <img src="./public/static/images/mobiles/apple.jpeg" />
-              <div class="rating">
-                <span class="fa fa-star" style="color: gold;"></span> 4.8
-              </div>
-              <div class="discount_strip">
-                <span class="fa fa-inr"></span> 2,000 off
-              </div>
-              <div class="title">
-                Apple iPhone 12 Pro Max | 256GB
-              </div>
-              <div class="pricing">
-
-                <div class="price">
-                  <span class="fa fa-inr"> </span> 21,000
+                <div class="feature__icon">
+                    <div class="feature__icon_image">
+                        <img
+                            src="./public/static/images/brand_icons/Samsung Logo PNG Images (Transparent HD Photo Clipart).jpeg" />
+                    </div>
+                    <a href="">
+                        Samsung
+                    </a>
                 </div>
-                <span class="original_price">25,000</span>
-                <span class="discount_percent">-53%</span>
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="custom_container">
-          <h1 class="text-left">Top Selling Mobiles</h1>
-          <span data-controller="2" class="fa-solid fa-angle-left"></span>
-          <span data-controller="2" class="fa-solid fa-angle-right"></span>
-          <div data-item-container="2" class="items_container flex flex-row w-full">
-            <div class="grid-cols-1 mobile_card grid-rows-5">
-              <img class="mgVerified" src="./public/static/images/mg-verified.png" />
-              <img src="./public/static/images/mobiles/apple.jpeg" />
-              <div class="rating">
-                <span class="fa fa-star" style="color: gold;"></span> 4.8
-              </div>
-              <div class="discount_strip">
-                <span class="fa fa-inr"></span> 2,000 off
-              </div>
-              <div class="title">
-                Apple iPhone 12 Pro Max | 256GB
-              </div>
-              <div class="pricing">
-
-                <div class="price">
-                  <span class="fa fa-inr"> </span> 21,000
+                <div class="feature__icon">
+                    <div class="feature__icon_image">
+                        <img src="./public/static/images/brand_icons/vivo.jpeg" />
+                    </div>
+                    <a href="">
+                        Vivo
+                    </a>
                 </div>
-                <span class="original_price">25,000</span>
-                <span class="discount_percent">-53%</span>
-
-              </div>
-            </div>
-            <div class="grid-cols-1 mobile_card grid-rows-5">
-              <img class="mgVerified" src="./public/static/images/mg-verified.png" />
-              <img src="./public/static/images/mobiles/apple.jpeg" />
-              <div class="rating">
-                <span class="fa fa-star" style="color: gold;"></span> 4.8
-              </div>
-              <div class="discount_strip">
-                <span class="fa fa-inr"></span> 2,000 off
-              </div>
-              <div class="title">
-                Apple iPhone 12 Pro Max | 256GB
-              </div>
-              <div class="pricing">
-
-                <div class="price">
-                  <span class="fa fa-inr"> </span> 21,000
+                <div class="feature__icon">
+                    <div class="feature__icon_image">
+                        <img src="./public/static/images/brand_icons/xiaomi.jpeg" />
+                    </div>
+                    <a href="">
+                        Xiaomi
+                    </a>
                 </div>
-                <span class="original_price">25,000</span>
-                <span class="discount_percent">-53%</span>
-
-              </div>
             </div>
-            <div class="grid-cols-1 mobile_card grid-rows-5">
-              <img class="mgVerified" src="./public/static/images/mg-verified.png" />
-              <img src="./public/static/images/mobiles/apple.jpeg" />
-              <div class="rating">
-                <span class="fa fa-star" style="color: gold;"></span> 4.8
-              </div>
-              <div class="discount_strip">
-                <span class="fa fa-inr"></span> 2,000 off
-              </div>
-              <div class="title">
-                Apple iPhone 12 Pro Max | 256GB
-              </div>
-              <div class="pricing">
 
-                <div class="price">
-                  <span class="fa fa-inr"> </span> 21,000
+            <!-- Slideshow starts here -->
+            <div class="slideshow_wrapper">
+                <div id="next">
+                    <span>
+                        &rsaquo;
+                    </span>
                 </div>
-                <span class="original_price">25,000</span>
-                <span class="discount_percent">-53%</span>
 
-              </div>
-            </div>
-            <div class="grid-cols-1 mobile_card grid-rows-5">
-              <img class="mgVerified" src="./public/static/images/mg-verified.png" />
-              <img src="./public/static/images/mobiles/apple.jpeg" />
-              <div class="rating">
-                <span class="fa fa-star" style="color: gold;"></span> 4.8
-              </div>
-              <div class="discount_strip">
-                <span class="fa fa-inr"></span> 2,000 off
-              </div>
-              <div class="title">
-                Apple iPhone 12 Pro Max | 256GB
-              </div>
-              <div class="pricing">
+                <div id="previous">&lsaquo;</div>
 
-                <div class="price">
-                  <span class="fa fa-inr"> </span> 21,000
+                <div class="slider">
+
+                    <div data-slide="3" class="slide">
+                        <img src="./public/static/images/slides/slide3.jpg" alt="" srcset="">
+                    </div>
+                    <div data-slide="2" class="slide">
+                        <img src="./public/static/images/slides/slide2.jpg" alt="" srcset="">
+                    </div>
+                    <div data-slide="1" class="slide">
+                        <img src="./public/static/images/slides/slide1.jpg" alt="" srcset="">
+                    </div>
                 </div>
-                <span class="original_price">25,000</span>
-                <span class="discount_percent">-53%</span>
 
-              </div>
             </div>
-            <div class="grid-cols-1 mobile_card grid-rows-5">
-              <img class="mgVerified" src="./public/static/images/mg-verified.png" />
-              <img src="./public/static/images/mobiles/apple.jpeg" />
-              <div class="rating">
-                <span class="fa fa-star" style="color: gold;"></span> 4.8
-              </div>
-              <div class="discount_strip">
-                <span class="fa fa-inr"></span> 2,000 off
-              </div>
-              <div class="title">
-                Apple iPhone 12 Pro Max | 256GB
-              </div>
-              <div class="pricing">
-
-                <div class="price">
-                  <span class="fa fa-inr"> </span> 21,000
+            <!-- slideshow ends here -->
+            <div class="w-full m-0">
+                <div class="ticker-container">
+                    <div class="ticker-wrapper">
+                        <div class="ticker-transition">
+                            <div class="ticker-item">
+                                This is an announcement. MG Gadgets has a live Sale.
+                            </div>
+                            <!-- <div class="ticker-item">Item 2.</div>
+                            <div class="ticker-item">Item 3.</div>
+                            <div class="ticker-item">Item 4.</div> -->
+                        </div>
+                    </div>
                 </div>
-                <span class="original_price">25,000</span>
-                <span class="discount_percent">-53%</span>
+                <!-- <div class="ticker-wrap">
+                    <div class="ticker">
+                        <span class="item-collection-1">
+                            <span class="item">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae vel fuga quaerat obcaecati magnam dicta assumenda explicabo 
+                            </span>
+                            <span class="item">
+                                pariatur illo veritatis quo, quas harum quis dignissimos! Odit, eos laudantium!
+                            </span>
+                        </span>
+                    </div>
+                    <div>
+                    </div>
+                </div> -->
+                <div class="custom_container">
+                    <h1 class="text-center text-l">
+                        Our Services
+                    </h1>
+                    <div class="grid md:grid-cols-3 md:grid-rows-1 gap-10 w-fit m-auto sm:grid-cols-1 sm:grid-rows-3">
+                        <div class="card_box free">
+                            <h4 class="">
+                                Buy Phones
+                            </h4>
+                            <img src="./public/static/images/service_icon_1.png" />
+                            <p class="text-sm p-4">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi recusandae dolor,
+                                maiores facilis ut harum labore consectetur, commodi ea ipsa voluptate repellendus et.
+                                <br /><br />
+                            <h4>Key Features</h4>
+                            </p>
+                            <ol class="p-4" style="list-style: lower-alpha;">
+                                <li>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, autem!
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, autem!
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, autem!
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, autem!
+                                </li>
+                            </ol>
+                            <button class="w-full btn primary text-black m-4">Explore now</button>
+                        </div>
+                        <div class="card_box free">
+                            <h4 class="">
+                                Sell Phones
+                            </h4>
+                            <img src="./public/static/images/service_icon_2.png" />
+                            <p class="text-sm p-4">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi recusandae dolor,
+                                maiores facilis ut harum labore consectetur, commodi ea ipsa voluptate repellendus et.
+                                <br /><br />
+                            <h4>Key Features</h4>
+                            </p>
+                            <ol class="p-4" style="list-style: lower-alpha;">
+                                <li>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, autem!
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, autem!
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, autem!
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, autem!
+                                </li>
+                            </ol>
+                            <button class="w-full btn primary text-black m-4">Explore now</button>
+                        </div>
+                        <div class="card_box free">
+                            <h4 class="">
+                                Repair Phones
+                            </h4>
+                            <img src="./public/static/images/service_icon_3.png" />
+                            <p class="text-sm p-4">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi recusandae dolor,
+                                maiores facilis ut harum labore consectetur, commodi ea ipsa voluptate repellendus et.
+                                <br /><br />
+                            <h4>Key Features</h4>
+                            </p>
+                            <ol class="p-4" style="list-style: lower-alpha;">
+                                <li>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, autem!
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, autem!
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, autem!
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, autem!
+                                </li>
+                            </ol>
+                            <button class="w-full btn primary text-black m-4">Explore now</button>
+                        </div>
+                    </div>
 
-              </div>
-            </div>
-            <div class="grid-cols-1 mobile_card grid-rows-5">
-              <img class="mgVerified" src="./public/static/images/mg-verified.png" />
-              <img src="./public/static/images/mobiles/apple.jpeg" />
-              <div class="rating">
-                <span class="fa fa-star" style="color: gold;"></span> 4.8
-              </div>
-              <div class="discount_strip">
-                <span class="fa fa-inr"></span> 2,000 off
-              </div>
-              <div class="title">
-                Apple iPhone 12 Pro Max | 256GB
-              </div>
-              <div class="pricing">
-
-                <div class="price">
-                  <span class="fa fa-inr"> </span> 21,000
                 </div>
-                <span class="original_price">25,000</span>
-                <span class="discount_percent">-53%</span>
+                <div class="custom_container">
+                    <h1 class="text-center text-l">15+ Brands</h1>
+                    <div
+                        class="grid max-sm:grid-cols-3 md:grid-cols-5 md:grid-rows-2 w-fit h-fit gap-5 m-auto place-items-center">
 
-              </div>
-            </div>
-            <div class="grid-cols-1 mobile_card grid-rows-5">
-              <img class="mgVerified" src="./public/static/images/mg-verified.png" />
-              <img src="./public/static/images/mobiles/apple.jpeg" />
-              <div class="rating">
-                <span class="fa fa-star" style="color: gold;"></span> 4.8
-              </div>
-              <div class="discount_strip">
-                <span class="fa fa-inr"></span> 2,000 off
-              </div>
-              <div class="title">
-                Apple iPhone 12 Pro Max | 256GB
-              </div>
-              <div class="pricing">
+                        <div class="card_box">
+                            <img src="./public/static/images/brand_icons/apple.jpeg" />
+                        </div>
+                        <div class="card_box">
+                            <img src="./public/static/images/brand_icons/google.jpeg" />
+                        </div>
+                        <div class="card_box">
+                            <img src="./public/static/images/brand_icons/motorola.jpeg" />
+                        </div>
+                        <div class="card_box">
+                            <img src="./public/static/images/brand_icons/one_plus.jpeg" />
+                        </div>
+                        <div class="card_box">
+                            <img src="./public/static/images/brand_icons/oppo.jpeg" />
+                        </div>
 
-                <div class="price">
-                  <span class="fa fa-inr"> </span> 21,000
+                        <div class="card_box">
+                            <img src="./public/static/images/brand_icons/realme.jpeg" />
+                        </div>
+                        <div class="card_box">
+                            <img
+                                src="./public/static/images/brand_icons/Samsung Logo PNG Images (Transparent HD Photo Clipart).jpeg" />
+                        </div>
+                        <div class="card_box">
+                            <img src="./public/static/images/brand_icons/vivo.jpeg" />
+                        </div>
+                        <div class="card_box">
+                            <img src="./public/static/images/brand_icons/xiaomi.jpeg" />
+                        </div>
+                        <div class="card_box">
+                            <img src="./public/static/images/brand_icons/poco.jpg" />
+                        </div>
+                        <div class="card_box">
+                            <img src="./public/static/images/brand_icons/poco.jpg" />
+                        </div>
+                        <div class="card_box">
+                            <img src="./public/static/images/brand_icons/poco.jpg" />
+                        </div>
+
+
+                    </div>
+
                 </div>
-                <span class="original_price">25,000</span>
-                <span class="discount_percent">-53%</span>
+                <div class="custom_container md flex flex-row justify-center align-middle">
+                    <button class="ml-auto btn primary text-black btn-md m-auto">View more</button>
+                </div>
+                <div class="custom_container items_container">
+                    <h1 class="text-left">Refurbished phones</h1>
+                    <span data-controller="1" class="fa-solid fa-angle-left"></span>
+                    <span data-controller="1" class="fa-solid fa-angle-right"></span>
+                    <div data-item-container="1" class="items_container flex flex-row w-full">
+                        <div class="grid-cols-1 mobile_card grid-rows-5">
+                            <img class="mgVerified" src="./public/static/images/mg-verified.png" />
+                            <img src="./public/static/images/mobiles/apple.jpeg" />
+                            <div class="rating">
+                                <span class="fa fa-star" style="color: gold;"></span> 4.8
+                            </div>
+                            <div class="discount_strip">
+                                <span class="fa fa-inr"></span> 2,000 off
+                            </div>
+                            <div class="title">
+                                <a href="">
+                                    Apple iPhone 12 Pro Max | 256GB
+                                </a>
+                            </div>
+                            <div class="pricing">
 
-              </div>
-            </div>
-          </div>
-        </div>
-        <img class="w-full" src="./public/static/images/banner_2.png" />
-        <div class="custom_container p-0">
-          <h1 class="text-center text-emphasis">Why Choose us?</h1>
-          <div class="grid md:grid-cols-2 md:grid-rows-1 w-full max-sm:grid-cols-1">
-            <img class="p-3.5" src="./public/static/images/graphic_1.png" />
-            <div>
-              <h3 class="pl-3.5 text-bold">Lorem ipsum dolor sit amet consectetur</h3>
-              <p class="p-3.5">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus ab quasi commodi
-                iusto
-                dolor amet? Ducimus, cumque sunt ut excepturi, quibusdam recusandae ullam doloribus
-                accusamus
-                neque, expedita laudantium exercitationem! Cupiditate labore aspernatur doloribus neque!
-              </p>
-              <h4 class="pl-3.5">Features</h4>
-              <ul class="pl-3.5">
-                <li>Pointer 1</li>
-                <li>Pointer 2</li>
-                <li>Pointer 3</li>
-                <li>Pointer 4</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="custom_container p-0">
-          <h1 class="text-center text-emphasis">Quality Service</h1>
-          <div class="grid md:grid-cols-2 md:grid-rows-1 w-full max-sm:grid-cols-1">
+                                <div class="price">
+                                    <span class="fa fa-inr"> </span> 21,000
+                                </div>
+                                <div class="max-sm:hidden">
+                                    <span class="original_price">25,000</span>
+                                    <span class="discount_percent">-53%</span>
+                                </div>
 
-            <div>
-              <h3 class="pl-3.5 text-bold">Lorem ipsum dolor sit amet consectetur</h3>
-              <p class="p-3.5">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus ab quasi commodi
-                iusto
-                dolor amet? Ducimus, cumque sunt ut excepturi, quibusdam recusandae ullam doloribus
-                accusamus
-                neque, expedita laudantium exercitationem! Cupiditate labore aspernatur doloribus neque!
-              </p>
-              <h4 class="pl-3.5">Features</h4>
-              <ul class="pl-3.5">
-                <li>Pointer 1</li>
-                <li>Pointer 2</li>
-                <li>Pointer 3</li>
-                <li>Pointer 4</li>
-              </ul>
-            </div>
-            <img class="p-3.5" src="./public/static/images/graphic_2.png" />
-          </div>
-        </div>
+                            </div>
+                            <div class="md:hidden">
+                                <span class="original_price">25,000</span>
+                                <span class="discount_percent">-53%</span>
+                            </div>
+                        </div>
+                        <div class="grid-cols-1 mobile_card grid-rows-5">
+                            <img class="mgVerified" src="./public/static/images/mg-verified.png" />
+                            <img src="./public/static/images/mobiles/apple.jpeg" />
+                            <div class="rating">
+                                <span class="fa fa-star" style="color: gold;"></span> 4.8
+                            </div>
+                            <div class="discount_strip">
+                                <span class="fa fa-inr"></span> 2,000 off
+                            </div>
+                            <div class="title">
+                                <a href="">
+                                    Apple iPhone 12 Pro Max | 256GB
+                                </a>
+                            </div>
+                            <div class="pricing">
+
+                                <div class="price">
+                                    <span class="fa fa-inr"> </span> 21,000
+                                </div>
+                                <div class="max-sm:hidden">
+                                    <span class="original_price">25,000</span>
+                                    <span class="discount_percent">-53%</span>
+                                </div>
+
+                            </div>
+                            <div class="md:hidden">
+                                <span class="original_price">25,000</span>
+                                <span class="discount_percent">-53%</span>
+                            </div>
+                        </div>
+                        <div class="grid-cols-1 mobile_card grid-rows-5">
+                            <img class="mgVerified" src="./public/static/images/mg-verified.png" />
+                            <img src="./public/static/images/mobiles/apple.jpeg" />
+                            <div class="rating">
+                                <span class="fa fa-star" style="color: gold;"></span> 4.8
+                            </div>
+                            <div class="discount_strip">
+                                <span class="fa fa-inr"></span> 2,000 off
+                            </div>
+                            <div class="title">
+                                <a href="">
+                                    Apple iPhone 12 Pro Max | 256GB
+                                </a>
+                            </div>
+                            <div class="pricing">
+
+                                <div class="price">
+                                    <span class="fa fa-inr"> </span> 21,000
+                                </div>
+                                <div class="max-sm:hidden">
+                                    <span class="original_price">25,000</span>
+                                    <span class="discount_percent">-53%</span>
+                                </div>
+
+                            </div>
+                            <div class="md:hidden">
+                                <span class="original_price">25,000</span>
+                                <span class="discount_percent">-53%</span>
+                            </div>
+                        </div>
+                        <div class="grid-cols-1 mobile_card grid-rows-5">
+                            <img class="mgVerified" src="./public/static/images/mg-verified.png" />
+                            <img src="./public/static/images/mobiles/apple.jpeg" />
+                            <div class="rating">
+                                <span class="fa fa-star" style="color: gold;"></span> 4.8
+                            </div>
+                            <div class="discount_strip">
+                                <span class="fa fa-inr"></span> 2,000 off
+                            </div>
+                            <div class="title">
+                                <a href="">
+                                    Apple iPhone 12 Pro Max | 256GB
+                                </a>
+                            </div>
+                            <div class="pricing">
+
+                                <div class="price">
+                                    <span class="fa fa-inr"> </span> 21,000
+                                </div>
+                                <div class="max-sm:hidden">
+                                    <span class="original_price">25,000</span>
+                                    <span class="discount_percent">-53%</span>
+                                </div>
+
+                            </div>
+                            <div class="md:hidden">
+                                <span class="original_price">25,000</span>
+                                <span class="discount_percent">-53%</span>
+                            </div>
+                        </div>
+                        <div class="grid-cols-1 mobile_card grid-rows-5">
+                            <img class="mgVerified" src="./public/static/images/mg-verified.png" />
+                            <img src="./public/static/images/mobiles/apple.jpeg" />
+                            <div class="rating">
+                                <span class="fa fa-star" style="color: gold;"></span> 4.8
+                            </div>
+                            <div class="discount_strip">
+                                <span class="fa fa-inr"></span> 2,000 off
+                            </div>
+                            <div class="title">
+                                <a href="">
+                                    Apple iPhone 12 Pro Max | 256GB
+                                </a>
+                            </div>
+                            <div class="pricing">
+
+                                <div class="price">
+                                    <span class="fa fa-inr"> </span> 21,000
+                                </div>
+                                <div class="max-sm:hidden">
+                                    <span class="original_price">25,000</span>
+                                    <span class="discount_percent">-53%</span>
+                                </div>
+
+                            </div>
+                            <div class="md:hidden">
+                                <span class="original_price">25,000</span>
+                                <span class="discount_percent">-53%</span>
+                            </div>
+                        </div>
+                        <div class="grid-cols-1 mobile_card grid-rows-5">
+                            <img class="mgVerified" src="./public/static/images/mg-verified.png" />
+                            <img src="./public/static/images/mobiles/apple.jpeg" />
+                            <div class="rating">
+                                <span class="fa fa-star" style="color: gold;"></span> 4.8
+                            </div>
+                            <div class="discount_strip">
+                                <span class="fa fa-inr"></span> 2,000 off
+                            </div>
+                            <div class="title">
+                                <a href="">
+                                    Apple iPhone 12 Pro Max | 256GB
+                                </a>
+                            </div>
+                            <div class="pricing">
+
+                                <div class="price">
+                                    <span class="fa fa-inr"> </span> 21,000
+                                </div>
+                                <div class="max-sm:hidden">
+                                    <span class="original_price">25,000</span>
+                                    <span class="discount_percent">-53%</span>
+                                </div>
+
+                            </div>
+                            <div class="md:hidden">
+                                <span class="original_price">25,000</span>
+                                <span class="discount_percent">-53%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="custom_container items_container">
+                    <h1 class="text-left">Best Selling Models</h1>
+                    <span data-controller="2" class="fa-solid fa-angle-left"></span>
+                    <span data-controller="2" class="fa-solid fa-angle-right"></span>
+                    <div data-item-container="2" class="items_container flex flex-row w-full">
+                        <div class="grid-cols-1 mobile_card grid-rows-5">
+                            <img class="mgVerified" src="./public/static/images/mg-verified.png" />
+                            <img src="./public/static/images/mobiles/apple.jpeg" />
+                            <div class="rating">
+                                <span class="fa fa-star" style="color: gold;"></span> 4.8
+                            </div>
+                            <div class="discount_strip">
+                                <span class="fa fa-inr"></span> 2,000 off
+                            </div>
+                            <div class="title">
+                                Apple iPhone 12 Pro Max | 256GB
+                            </div>
+                            <div class="pricing">
+
+                                <div class="price">
+                                    <span class="fa fa-inr"> </span> 21,000
+                                </div>
+                                <span class="original_price">25,000</span>
+                                <span class="discount_percent">-53%</span>
+
+                            </div>
+                        </div>
+                        <div class="grid-cols-1 mobile_card grid-rows-5">
+                            <img class="mgVerified" src="./public/static/images/mg-verified.png" />
+                            <img src="./public/static/images/mobiles/apple.jpeg" />
+                            <div class="rating">
+                                <span class="fa fa-star" style="color: gold;"></span> 4.8
+                            </div>
+                            <div class="discount_strip">
+                                <span class="fa fa-inr"></span> 2,000 off
+                            </div>
+                            <div class="title">
+                                Apple iPhone 12 Pro Max | 256GB
+                            </div>
+                            <div class="pricing">
+
+                                <div class="price">
+                                    <span class="fa fa-inr"> </span> 21,000
+                                </div>
+                                <span class="original_price">25,000</span>
+                                <span class="discount_percent">-53%</span>
+
+                            </div>
+                        </div>
+                        <div class="grid-cols-1 mobile_card grid-rows-5">
+                            <img class="mgVerified" src="./public/static/images/mg-verified.png" />
+                            <img src="./public/static/images/mobiles/apple.jpeg" />
+                            <div class="rating">
+                                <span class="fa fa-star" style="color: gold;"></span> 4.8
+                            </div>
+                            <div class="discount_strip">
+                                <span class="fa fa-inr"></span> 2,000 off
+                            </div>
+                            <div class="title">
+                                Apple iPhone 12 Pro Max | 256GB
+                            </div>
+                            <div class="pricing">
+
+                                <div class="price">
+                                    <span class="fa fa-inr"> </span> 21,000
+                                </div>
+                                <span class="original_price">25,000</span>
+                                <span class="discount_percent">-53%</span>
+
+                            </div>
+                        </div>
+                        <div class="grid-cols-1 mobile_card grid-rows-5">
+                            <img class="mgVerified" src="./public/static/images/mg-verified.png" />
+                            <img src="./public/static/images/mobiles/apple.jpeg" />
+                            <div class="rating">
+                                <span class="fa fa-star" style="color: gold;"></span> 4.8
+                            </div>
+                            <div class="discount_strip">
+                                <span class="fa fa-inr"></span> 2,000 off
+                            </div>
+                            <div class="title">
+                                Apple iPhone 12 Pro Max | 256GB
+                            </div>
+                            <div class="pricing">
+
+                                <div class="price">
+                                    <span class="fa fa-inr"> </span> 21,000
+                                </div>
+                                <span class="original_price">25,000</span>
+                                <span class="discount_percent">-53%</span>
+
+                            </div>
+                        </div>
+                        <div class="grid-cols-1 mobile_card grid-rows-5">
+                            <img class="mgVerified" src="./public/static/images/mg-verified.png" />
+                            <img src="./public/static/images/mobiles/apple.jpeg" />
+                            <div class="rating">
+                                <span class="fa fa-star" style="color: gold;"></span> 4.8
+                            </div>
+                            <div class="discount_strip">
+                                <span class="fa fa-inr"></span> 2,000 off
+                            </div>
+                            <div class="title">
+                                Apple iPhone 12 Pro Max | 256GB
+                            </div>
+                            <div class="pricing">
+
+                                <div class="price">
+                                    <span class="fa fa-inr"> </span> 21,000
+                                </div>
+                                <span class="original_price">25,000</span>
+                                <span class="discount_percent">-53%</span>
+
+                            </div>
+                        </div>
+                        <div class="grid-cols-1 mobile_card grid-rows-5">
+                            <img class="mgVerified" src="./public/static/images/mg-verified.png" />
+                            <img src="./public/static/images/mobiles/apple.jpeg" />
+                            <div class="rating">
+                                <span class="fa fa-star" style="color: gold;"></span> 4.8
+                            </div>
+                            <div class="discount_strip">
+                                <span class="fa fa-inr"></span> 2,000 off
+                            </div>
+                            <div class="title">
+                                Apple iPhone 12 Pro Max | 256GB
+                            </div>
+                            <div class="pricing">
+
+                                <div class="price">
+                                    <span class="fa fa-inr"> </span> 21,000
+                                </div>
+                                <span class="original_price">25,000</span>
+                                <span class="discount_percent">-53%</span>
+
+                            </div>
+                        </div>
+                        <div class="grid-cols-1 mobile_card grid-rows-5">
+                            <img class="mgVerified" src="./public/static/images/mg-verified.png" />
+                            <img src="./public/static/images/mobiles/apple.jpeg" />
+                            <div class="rating">
+                                <span class="fa fa-star" style="color: gold;"></span> 4.8
+                            </div>
+                            <div class="discount_strip">
+                                <span class="fa fa-inr"></span> 2,000 off
+                            </div>
+                            <div class="title">
+                                Apple iPhone 12 Pro Max | 256GB
+                            </div>
+                            <div class="pricing">
+
+                                <div class="price">
+                                    <span class="fa fa-inr"> </span> 21,000
+                                </div>
+                                <span class="original_price">25,000</span>
+                                <span class="discount_percent">-53%</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img class="w-full" src="./public/static/images/banner_2.png" />
+                <div class="custom_container p-0">
+                    <h1 class="text-center text-emphasis">Why Choose us?</h1>
+                    <div class="grid md:grid-cols-2 md:grid-rows-1 w-full max-sm:grid-cols-1">
+                        <img class="p-3.5" src="./public/static/images/graphic_1.png" />
+                        <div>
+                            <h3 class="pl-3.5 text-bold">Lorem ipsum dolor sit amet consectetur</h3>
+                            <p class="p-3.5">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus ab quasi commodi
+                                iusto
+                                dolor amet? Ducimus, cumque sunt ut excepturi, quibusdam recusandae ullam doloribus
+                                accusamus
+                                neque, expedita laudantium exercitationem! Cupiditate labore aspernatur doloribus neque!
+                            </p>
+                            <h4 class="pl-3.5">Features</h4>
+                            <ul class="pl-3.5">
+                                <li>Pointer 1</li>
+                                <li>Pointer 2</li>
+                                <li>Pointer 3</li>
+                                <li>Pointer 4</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom_container p-0">
+                    <h1 class="text-center text-emphasis">Quality Service</h1>
+                    <div class="grid md:grid-cols-2 md:grid-rows-1 w-full max-sm:grid-cols-1">
+
+                        <div>
+                            <h3 class="pl-3.5 text-bold">Lorem ipsum dolor sit amet consectetur</h3>
+                            <p class="p-3.5">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus ab quasi commodi
+                                iusto
+                                dolor amet? Ducimus, cumque sunt ut excepturi, quibusdam recusandae ullam doloribus
+                                accusamus
+                                neque, expedita laudantium exercitationem! Cupiditate labore aspernatur doloribus neque!
+                            </p>
+                            <h4 class="pl-3.5">Features</h4>
+                            <ul class="pl-3.5">
+                                <li>Pointer 1</li>
+                                <li>Pointer 2</li>
+                                <li>Pointer 3</li>
+                                <li>Pointer 4</li>
+                            </ul>
+                        </div>
+                        <img class="p-3.5" src="./public/static/images/graphic_2.png" />
+                    </div>
+                </div>
 
 
-    </main>
+        </main>
 
-    <!-- Main Content ends -->
+        <!-- Main Content ends -->
 
-  </div>
-  <footer class="grid bg-black w-full p-20 md:grid-cols-5 max-sm:grid-cols-1 text-white">
-    <div class="col-span-1 flex flex-col justify-between h-full">
-      <img class="max-md:pb-28 max-sm:pb-4" src="./public/static/images/header-logo.png" />
-      <div class="pt-4 social_icons">
-        <p class="text-center">Follow us on</p>
-        <div class="pt-4.5 text-2xl justify-center flex flex-row">
-          <span class="fa-brands fa-facebook text-white mr-4"></span>
-          <span class="fa-brands fa-x-twitter text-white mr-4"></span>
-          <span class="fa-brands fa-instagram text-white mr-4"></span>
-          <span class="fa-brands fa-youtube text-white mr-4"></span>
-        </div>
-      </div>
     </div>
-    <div></div>
-    <div></div>
-    <div class="md:col-span-2 max-sm:col-span-1 max-sm:pt-24">
-      <div class="footer_nav grid md:grid-cols-4 gap-0.5 max-sm:grid-cols-1">
-        <ul class="max-sm:pt-3">
-          <li class="text-bold pb-1.5">Services</li>
-          <li>
-            <a href="">
-              Service 1
-            </a>
-          </li>
-          <li>
-            <a href="">
-              Service 2
-            </a>
-          </li>
-          <li>
-            <a href="">
-              Service 3
-            </a>
-          </li>
-          <li>
-            <a href="">
-              Service 4
-            </a>
-          </li>
+    <footer class="grid bg-black w-full p-20 md:grid-cols-5 max-sm:grid-cols-1 text-white">
+        <div class="col-span-1 flex flex-col justify-between h-full">
+            <img class="max-md:pb-28 max-sm:pb-4" src="./public/static/images/header-logo.png" />
+            <div class="pt-4 social_icons">
+                <p class="text-center">Follow us on</p>
+                <div class="pt-4.5 text-2xl justify-center flex flex-row">
+                    <span class="fa-brands fa-facebook text-white mr-4"></span>
+                    <span class="fa-brands fa-x-twitter text-white mr-4"></span>
+                    <span class="fa-brands fa-instagram text-white mr-4"></span>
+                    <span class="fa-brands fa-youtube text-white mr-4"></span>
+                </div>
+            </div>
+        </div>
+        <div></div>
+        <div></div>
+        <div class="md:col-span-2 max-sm:col-span-1 max-sm:pt-24">
+            <div class="footer_nav grid md:grid-cols-4 gap-0.5 max-sm:grid-cols-1">
+                <ul class="max-sm:pt-3">
+                    <li class="text-bold pb-1.5">Services</li>
+                    <li>
+                        <a href="">
+                            Service 1
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Service 2
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Service 3
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Service 4
+                        </a>
+                    </li>
 
-        </ul>
-        <ul class="max-sm:pt-3">
-          <li class="text-bold pb-1.5">Buy Phone</li>
-          <li>
-            <a href="">
-              Buy Phone
-            </a>
-          </li>
-          <li>
-            <a href="">
-              Buy Phone
-            </a>
-          </li>
-          <li>
-            <a href="">
-              Buy Phone
-            </a>
-          </li>
-          <li>
-            <a href="">
-              Buy Phone
-            </a>
-          </li>
-        </ul>
-        <ul class="max-sm:pt-3">
-          <li class="text-bold pb-1.5">Sell Phone</li>
-          <li>
-            <a href="">
-              Sell Phone
-            </a>
-          </li>
-          <li>
-            <a href="">
-              Sell Phone
-            </a>
-          </li>
-          <li>
-            <a href="">
-              Sell Phone
-            </a>
-          </li>
-          <li>
-            <a href="">
-              Sell Phone
-            </a>
-          </li>
-        </ul>
-        <ul class="max-sm:pt-3">
-          <li class="text-bold pb-1.5">Repair Phone</li>
-          <li>
-            <a href="">
-              Repair Phone
-            </a>
-          </li>
-          <li>
-            <a href="">
-              Repair Phone
-            </a>
-          </li>
-          <li>
-            <a href="">
-              Repair Phone
-            </a>
-          </li>
-          <li>
-            <a href="">
-              Repair Phone
-            </a>
-          </li>
-        </ul>
+                </ul>
+                <ul class="max-sm:pt-3">
+                    <li class="text-bold pb-1.5">Buy Phone</li>
+                    <li>
+                        <a href="">
+                            Buy Phone
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Buy Phone
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Buy Phone
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Buy Phone
+                        </a>
+                    </li>
+                </ul>
+                <ul class="max-sm:pt-3">
+                    <li class="text-bold pb-1.5">Sell Phone</li>
+                    <li>
+                        <a href="">
+                            Sell Phone
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Sell Phone
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Sell Phone
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Sell Phone
+                        </a>
+                    </li>
+                </ul>
+                <ul class="max-sm:pt-3">
+                    <li class="text-bold pb-1.5">Repair Phone</li>
+                    <li>
+                        <a href="">
+                            Repair Phone
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Repair Phone
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Repair Phone
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Repair Phone
+                        </a>
+                    </li>
+                </ul>
 
-      </div>
-    </div>
-  </footer>
-  <p style="color: lightgray;" class="text-sm text-center p-3 bg-black">Copyright <i class="far fa-copyright"></i>
-    <span id="year"></span> MG Gadgets All Rights Reserved
-  </p>
-  <!-- Inline Scripts -->
-  <script>
+            </div>
+        </div>
+    </footer>
+    <p style="color: lightgray;" class="text-sm text-center p-3 bg-black">Copyright <i class="far fa-copyright"></i>
+        <span id="year"></span> MG Gadgets All Rights Reserved
+    </p>
+    <!-- Inline Scripts -->
+    <script>
 
 
-  </script>
-  <script src="./public/static/js/vanilla.js"></script>
+    </script>
+    <script src="./public/static/js/vanilla.js"></script>
 </body>
 
 

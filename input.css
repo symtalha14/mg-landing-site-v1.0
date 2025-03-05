@@ -18,11 +18,17 @@
     src: url("./public/static/fonts/static/NotoSans-Bold.ttf");
 }
 
+@font-face {
+    font-family: 'Noto Sans Semibold';
+    font-style: normal;
+    src: url("./public/static/fonts/static/NotoSans-SemiBold.ttf");
+}
 
 
 @theme {
     --default-font-family: "Noto Sans Light", sans-serif;
     --regular-font-family: "Noto Sans Regular", sans-serif;
+    --medium-font-family: "Noto Sans Semibold", sans-serif;
     --bold-font-family: "Noto Sans Bold", sans-serif;
     --color-brand-primary: #000000;
     --section-spacing: 40px;
@@ -280,13 +286,14 @@ main {
     margin-top: 0px;
     display: flex;
     flex-flow: row;
-
+    background-color: #000000;
 }
 
 .slideshow_wrapper {
     width: 100%;
     height: fit-content;
     position: relative;
+    background-color: #000000;
 }
 
 .slider .slide {
@@ -448,15 +455,16 @@ nav {
 .mobile_card {
     background-color: white;
     height: auto;
-    width: 450px;
+    width: 215px;
     padding: 30px;
     padding-left: 15px;
     box-sizing: border-box;
-    box-shadow: 0 0 8px #0000002f;
+    border: 1px solid rgba(211, 211, 211, 0.604);
+    border-radius: 5px;
     position: relative;
-    min-width: 268px;
+    min-width: 215px;
     max-width: 350px;
-    margin-right: 13px;
+    margin-right: 10px;
 }
 
 .mobile_card .mgVerified {
@@ -472,7 +480,7 @@ nav {
 }
 
 .mobile_card .pricing {
-    width: 70%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -481,7 +489,7 @@ nav {
 .mobile_card .title {
     font-family: var(--regular-font-family);
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding-top: 25px;
     padding-bottom: 20px;
     text-align: left;
@@ -494,11 +502,11 @@ nav {
 }
 
 .mobile_card .rating {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
 }
 
 .mobile_card .discount_strip {
-    background-color: #ED4166;
+    background-color: #098a9b;
     width: fit-content;
     color: white;
     padding-left: 6px;
@@ -506,23 +514,23 @@ nav {
     padding-bottom: 3px;
     padding-top: 3px;
     margin-top: 4px;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     letter-spacing: 0.1cap;
 }
 
-.mobile_card .pricing .original_price {
+.original_price {
     text-decoration-line: line-through;
     font-size: 0.85rem;
 }
 
-.mobile_card .pricing .discount_percent {
+.discount_percent {
     color: red;
     font-size: 0.9rem;
 }
 
 .mobile_card img {
-    width: 200px;
-    height: 200px;
+    width: 115px;
+    height: 115px;
     margin: auto;
 }
 
@@ -552,7 +560,7 @@ nav {
 .custom_container h1,
 .custom_container h3,
 .custom_container h4 {
-    font-family: var(--regular-font-family);
+    font-family: var(--bold-font-family);
     font-weight: bold;
     font-size: 1.8rem;
     line-height: 7.2rem;
@@ -591,6 +599,11 @@ h3.text-b {
     display: grid;
     place-items: center;
     box-shadow: 0 0 8px rgba(180, 180, 180, 0.54);
+}
+
+.card_box.free {
+    width: 350px;
+    height: fit-content;
 }
 
 .card_box img {
@@ -641,46 +654,61 @@ h3.text-b {
 }
 
 .custom_container .fa-angle-left {
-    left: -2.5%;
+    left: .5%;
     display: none;
 }
 
 .custom_container .fa-angle-right {
-    right: -2.5%;
+    right: .5%;
 }
 
 
-.ticker-wrap {
+.ticker-container {
     width: 100%;
-    height: 80px;
-    margin: 0 auto;
     overflow: hidden;
+    background-color: rgb(253, 92, 149);
+    color: #FFFFFF;
+    padding: 10px;
+    font-family: var(--medium-font-family);
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1cap;
+}
+
+.ticker-wrapper {
+    width: 100%;
+    padding-left: 100%;
+    background-color: transparent;
+}
+
+@keyframes ticker {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+.ticker-transition {
+    display: inline-block;
     white-space: nowrap;
-    position: relative;
-    bottom: 0;
-    height: 3.5rem;
-    background-color: #f66282;
+    padding-right: 100%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: ticker;
+    animation-duration: 13s;
 }
 
-.ticker {
+.ticker-transition:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.ticker-item {
     display: inline-block;
-    margin-top: 5px;
-    animation: marquee 20s linear infinite;
-}
-
-.item-collection-1 {
-    position: relative;
-    left: 0%;
-    animation: swap 20s linear infinite;
-}
-
-.item {
-    display: inline-block;
-    padding: 0 1rem;
-    font-size: 2rem;
-    color: rgb(255, 255, 255);
-    font-weight: 800;
-    font-family: sans-serif;
+    padding: 0 2rem;
 }
 
 /* Transition */
@@ -713,6 +741,8 @@ h3.text-b {
 */
 
 @media only screen and (max-width:786px) {
+
+
     #header__search {
         width: 100%;
         box-sizing: border-box;
@@ -722,8 +752,9 @@ h3.text-b {
         height: 300px;
     }
 
-    .custom_container {
-        padding-left: 25px;
+    .custom_container.items_container {
+        padding: 25px;
+        padding-right: 0 !important;
     }
 
     .custom_container.p-0 {
@@ -736,33 +767,99 @@ h3.text-b {
     }
 
     .card_box {
-        width: 150px;
-        height: 150px;
+        width: 135px;
+        height: 135px;
     }
 
     .mobile_card {
-        width: 380px;
+        width: 180px;
+        min-width: 180px;
+        max-width: unset;
+        box-shadow: none;
+        border: 1px solid rgba(211, 211, 211, 0.604);
+        border-radius: 5px;
+        box-sizing: content-box;
+        padding: 10px;
+        padding-left: 10px;
+    }
+
+    .mobile_card img {
+        width: 150px;
+        height: auto;
+        margin: auto;
     }
 
     .mobile_card .title {
         font-size: 0.8rem;
+        font-family: var(--regular-font-family);
+        font-weight: bold;
     }
 
     .mobile_card .pricing .price {
         font-size: 1rem;
+        font-family: var(--medium-font-family);
+        font-weight: bolder;
     }
 
-    .mobile_card .pricing .original_price {
-        font-size: 0.8rem;
+    .original_price {
+        font-size: 0.85rem;
+    }
+
+    .discount_percent {
+        font-size: 0.85rem;
     }
 
     .mobile_card .rating {
-        font-size: 1rem;
+        font-size: 0.85rem;
     }
 
     .mobile_card .discount_strip {
-        font-size: 0.75rem;
+        font-size: 0.65rem;
     }
+
+    .fa-angle-right,
+    .fa-angle-left {
+        display: none !important;
+    }
+
+    .custom_container h1,
+    .custom_container h3,
+    .custom_container h4 {
+        font-family: var(--medium-font-family);
+        /* font-weight: bolder; */
+        font-size: 1.1rem;
+        line-height: 3.8rem;
+    }
+
+    .custom_container h4 {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    .custom_container h3 {
+        line-height: 2rem;
+    }
+
+    .custom_container{
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+
+    .card_box.free {
+        width: 90%;
+        margin: auto;
+        padding: 25px;
+    }
+
+    #next,
+    #previous {
+        display: none;
+    }
+
+    .sticky+.content{
+        padding-top: 20px;
+    }
+
 }
 
 
@@ -770,16 +867,17 @@ h3.text-b {
     Media Queries end
 */
 
-@keyframes revealNav{
-    from{
-       transform: translateX(100%);
+@keyframes revealNav {
+    from {
+        transform: translateX(100%);
     }
-    to{
+
+    to {
         transform: translateX(0);
     }
 }
 
-.mobileNav{
+.mobileNav {
     position: fixed;
     background-color: white;
     color: black !important;
@@ -788,27 +886,28 @@ h3.text-b {
     top: 0;
     left: 0;
     animation-name: revealNav;
-    animation-timing-function:linear;
-    animation-duration: 500ms;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-duration: 1000ms;
     animation-delay: 0;
     z-index: 1000000;
     overflow-y: scroll;
     padding-top: 40px;
     display: none;
+    font-size: 1.25rem;
 }
 
-.mobileNav ul.parentContainer{
+.mobileNav ul.parentContainer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.mobileNav .dropdown-container{
+.mobileNav .dropdown-container {
     position: relative;
 
 }
 
-.mobileNav .dropdown{
+.mobileNav .dropdown {
     position: relative;
     margin: 0;
     padding: 0;
@@ -818,19 +917,19 @@ h3.text-b {
 
 
 
-.mobileNav .dropdown.child{
+.mobileNav .dropdown.child {
     position: relative;
     left: 0;
     top: inherit;
 }
 
-i.fa-plus{
+i.fa-plus {
     position: absolute;
     top: 0;
     right: 10px;
 }
 
-i.fa-minus{
+i.fa-minus {
     display: none;
     margin-right: 10px;
     position: absolute;
@@ -838,11 +937,11 @@ i.fa-minus{
     right: 10px;
 }
 
-.mobileNav .dropdown-container.parent:hover i.fa-minus{
+.mobileNav .dropdown-container.parent:hover i.fa-minus {
     display: block;
 }
 
-.mobileNav .dropdown-container.parent:hover i.fa-plus{
+.mobileNav .dropdown-container.parent:hover i.fa-plus {
     display: none;
 }
 
@@ -852,36 +951,35 @@ i.fa-minus{
     display: block;
 }
 
-.mobileNav .dropdown-container.child:hover ~ .parent_above
- {
+.mobileNav .dropdown-container.child:hover~.parent_above {
     display: block;
 }
 
-.mobileNav .dropdown-container.parent:hover i.fa-minus:hover + div.dropdown.parent{
+.mobileNav .dropdown-container.parent:hover i.fa-minus:hover+div.dropdown.parent {
     display: none !important;
 }
 
 .parent_above ul:hover,
 .parent_above:hover,
 .parent_above ul li:hover,
-.dropdown.child:hover > .parent_above,
-.dropdown-container:hover > .parent_above{
+.dropdown.child:hover>.parent_above,
+.dropdown-container:hover>.parent_above {
     display: block;
 }
 
-.mobileNav .parent_above{
+.mobileNav .parent_above {
     display: none;
 }
 
-.mobileNav .dropdown-container{
+.mobileNav .dropdown-container {
     width: 100%;
 }
 
-.mobileNav .fa-plus{
+.mobileNav .fa-plus {
     margin-right: 10px;
 }
 
-.mobileNav .dropdown-container a{
+.mobileNav .dropdown-container a {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -889,10 +987,14 @@ i.fa-minus{
 
 
 
-.mobileNav ul{
+.mobileNav ul {
     overflow-y: scroll !important;
 }
 
-.mobileNav ul li{
+.mobileNav ul li {
     padding-bottom: 0.8rem;
+}
+
+ol li {
+    margin-bottom: 10px;
 }
