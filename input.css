@@ -47,6 +47,7 @@
 
 body {
     /* padding-bottom: 10rem; */
+    background-color: #fffced16;
 }
 
 main {
@@ -218,7 +219,7 @@ input:focus-visible {
 /* Feature Icons */
 .feature__icons {
     overflow-x: scroll;
-    background-color: #90ba9d14;
+    background-color: #fffced;
 
 }
 
@@ -231,8 +232,8 @@ input:focus-visible {
 }
 
 .feature__icon_image {
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
     background-color: #ffffff;
     margin: 10px;
     margin-bottom: 2px;
@@ -604,7 +605,7 @@ h3.text-b {
     padding: 10px;
     display: grid;
     place-items: center;
-    box-shadow: 0 0 8px rgba(180, 180, 180, 0.54);
+    box-shadow: 0 0 10px rgba(180, 180, 180, 0.955);
 }
 
 .card_box.free {
@@ -672,13 +673,12 @@ h3.text-b {
 .ticker-container {
     width: 100%;
     overflow: hidden;
-    background-color: rgb(93, 113, 169);
+    background-color: #F4CE14;
     color: #FFFFFF;
     padding: 10px;
     font-family: var(--medium-font-family);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: bold;
-    letter-spacing: 0.1cap;
 }
 
 .ticker-wrapper {
@@ -715,6 +715,9 @@ h3.text-b {
 .ticker-item {
     display: inline-block;
     padding: 0 2rem;
+    font-family: var(--medium-font-family);
+    font-weight: bolder;
+    color: #000000;
 }
 
 /* Transition */
@@ -776,7 +779,7 @@ h3.text-b {
         width: 100px;
         height: 100px;
         box-shadow: none;
-        border: 1px solid rgba(211, 211, 211, 0.419);
+        border: 1px solid rgba(211, 211, 211, 0.719);
         border-radius: 3px;
 
     }
@@ -870,6 +873,10 @@ h3.text-b {
         padding-top: 20px;
     }
 
+    .feature__icon_image img{
+        max-width: 70%;
+        margin: auto;
+    }
 }
 
 
